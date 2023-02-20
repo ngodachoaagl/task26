@@ -1,0 +1,19 @@
+.c-merit{
+
+}
+
+.c-merit__title {
+    text-align: center;
+    font-family: $notoSans;
+    font-weight: 400;
+    font-size: 3.6rem;
+}
+
+.c-merit__case {
+    gap: 58px;
+transform: translateX(49px);
+    .c-box__item {
+        flex: 0 1 calc(33.33% - 58px);
+    }
+}
+

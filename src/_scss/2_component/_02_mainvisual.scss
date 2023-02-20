@@ -1,0 +1,43 @@
+.c-mainvisual {
+   
+
+}
+
+.c-mainvisual__inner {
+    position: relative;
+    
+  
+
+}
+
+.c-mainvisual__text {
+    position: absolute;
+    width: 434px;
+    height: 461px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 110px 27px 85px;
+
+    .c-mainvisual__logo {
+        margin-bottom: 60px;
+    }
+
+    .c-mainvisual__title {
+        display: none;
+    }
+
+    .c-mainvisual__desc {
+        font-family: $notoSerif;
+        font-weight: bold;
+        font-size: 2rem;
+        color: #231815;
+        margin-bottom: 40px;
+       
+    }
+}

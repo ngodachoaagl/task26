@@ -1,0 +1,31 @@
+.c-box {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .c-box__item {
+    }
+}
+
+.c-box--1col {
+    .c-box__item {
+        width: 100%;
+    }
+}
+
+.c-box--2col {
+    .c-box__item {
+        width: 50%;
+    }
+}
+
+.c-box--3col {
+    .c-box__item {
+        width: calc(100% / 3);
+    }
+}
+
+.c-box--4col {
+    .c-box__item {
+        width: calc(100% / 4);
+    }
+}
