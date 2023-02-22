@@ -20,5 +20,74 @@
         ]
       }
     ]
+  },
+  "merit": {
+    "title": "家づくりの、こんな不安やお悩みないですか？",
+    "headerContent": [
+      {
+        "caseImgUrl": "/assets/img/merit/1x/case1.png",
+        "caseMess": "子育てにはどんな家が良いんだろう？"
+      },
+      {
+        "caseImgUrl": "/assets/img/merit/1x/case2.png",
+        "caseMess": "理想の家って実現できるの？",
+        "caseCaption": "いろいろとこだわった"
+      },
+      {
+        "caseImgUrl": "/assets/img/merit/1x/case3.png",
+        "caseMess": "暮らしのスタイルがイメージできない",
+        "caseCaption": "家は建てたいけど"
+      }
+    ],
+    "bodyContent": [
+      {
+        "logoImg": "/assets/img/merit/1x/merit01.png",
+        "title": "実物を見て触って<span>体感</span>できます!",
+        "desc": "カタログや資料だけではなく、高気密・高断熱の木の住まいや、家事動線や収納スペースの女性目線で叶った工夫など、実際に見て触ってご体感いただけます。",
+        "meritIMG": "/assets/img/merit/1x/merit01IMG.png",
+        "imgAlt": "実物を見て触って体感できます!"
+      },
+      {
+        "logoImg": "/assets/img/merit/1x/merit02.png",
+        "title": "土地情報<span>1000件以上</span>が見放題!",
+        "desc": "愛媛県の最新の土地情報から、学区・最寄りの駅などご希望の条件でお好きな土地をご覧いただけます。さらに、地盤予測や付帯工事費なども含め、建てた後も安心して暮らせる総合的な土地のアドバイスをいたします。 ",
+        "meritIMG": "/assets/img/merit/1x/merit02IMG.png",
+        "imgAlt": "土地情報1000件以上が見放題!!",
+        "rowRev": true
+      },
+      {
+        "logoImg": "/assets/img/merit/1x/merit03.png",
+        "title": "お客様に合った<span>住宅ローン</span>を診断!",
+        "desc": "住宅ローンアドバイザーの資格を持ったスタッフが、住宅ローン提携5大金融機関からお客様に合った適正住宅ローンを診断いたします。",
+        "meritIMG": "/assets/img/merit/1x/merit03IMG.png",
+        "imgAlt": "お客様に合った>住宅ローンを診断!"
+      }
+    ]
+  },
+  "rePoint": {
+    "bodyContent": [
+      {
+        "imgUrl": "/assets/img/RePoint/1x/rePoint1.png",
+        "boxTitle": "豊富な+FUNのオプション",
+        "boxDesc": "1,100万円の家をベースに、ライフスタイルにあった+FUNのオプションを組み合わせられます。価格が決まった明朗なシステムで、GOOD DESIGN賞を受賞。"
+      }
+      ,
+      {
+        "imgUrl": "/assets/img/RePoint/1x/rePoint2.png",
+        "boxTitle": "シンプルな四角い外観",
+        "boxDesc": "住む方の生活に馴染むよう、シンプルでムダを削ぎ落とした四角い家。凹凸のないレイアウトで、室内も広々した空間を実現。"
+      },
+      {
+        "imgUrl": "/assets/img/RePoint/1x/rePoint3.png",
+        "boxTitle": "ガルバリウム鋼板の外壁・屋根",
+        "boxDesc": "外壁・屋根に使われているガルバリウム鋼板は、無骨で美しいZERO-CUBEの外観の特徴。<br>耐久・耐熱性など機能面に優れた、高品質の素材です。"
+      },
+      
+      {
+        "imgUrl": "/assets/img/RePoint/1x/rePoint4.png",
+        "boxTitle": "家族を感じるリビング",
+        "boxDesc": "1階が見渡せる対面キッチンでは、家族との会話も弾みます。吹き抜けのリビングイン階段は、居間を導線の中心に考えた、家族のコミュニケーションが生まれる設計。"
+      }
+    ]
   }
 }

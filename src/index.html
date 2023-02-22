@@ -13,31 +13,117 @@
           <img class="c-mainvisual__logo" src="/assets/img/mainvisual/logo.png" alt="COCO MGM DESIGN">
           <h1 class="c-mainvisual__title">COCO MGM DESIGN</h1>
           <h2 class="c-mainvisual__desc">「こんな家に住みたい」をカタチにした家</h2>
-          <img class="c-mainvisual__caption" src="/assets/img/mainvisual/caption.png" alt="COCO MGM DESIGN">
+          <img class="c-mainvisual__cap" src="/assets/img/mainvisual/caption.png" alt="COCO MGM DESIGN">
         </div>
       </div>
     </section>
     <section class="c-merit l-container--1600">
       <h2 class="c-merit__title">家づくりの、こんな不安やお悩みないですか？</h2>
-      <div class="c-merit__case c-box c-box--3col">
-        <div class="c-box__item">
-          <img class="c-merit__caseImg" src="/assets/img/merit/1x/case1.png" alt="">
-          <div class="u-speech__bubble">
-            <p class="u-speech__mess">子育てにはどんな家が良いんだろう？</p>
-          </div>
+      <div class="c-merit__header">
+        <div class="c-merit__case c-box c-box--3col">
+          <% if(typeof merit !='undefined' ) { %>
+            <% merit.headerContent.forEach(item=>{%>
+              <div class="c-box__item">
+                <img class="c-merit__caseImg" src="<%= item.caseImgUrl %>" alt="<%= item.caseMess %>">
+                <div class="u-speech__bubble">
+                  <p class="u-speech__mess">
+                    <%= item.caseMess %>
+                  </p>
+                  <% if(typeof item.caseCaption !='undefined' ) {%>
+                    <span class="u-speech__cap">
+                      <%=item.caseCaption%>
+                    </span>
+                    <% }%>
+                </div>
+              </div>
+              <% }) %>
+                <% } %>
+
         </div>
-          <div class="c-box__item">
-            <img class="c-merit__caseImg" src="/assets/img/merit/1x/case1.png" alt="">
-            <div class="u-speech__bubble">
-              <p class="u-speech__mess">子育てにはどんな家が良いんだろう？</p>
-            </div>
-          </div>
-            <div class="c-box__item">
-              <img class="c-merit__caseImg" src="/assets/img/merit/1x/case1.png" alt="">
-              <div class="u-speech__bubble">
-                <p class="u-speech__mess">子育てにはどんな家が良いんだろう？</p>
+      </div>
+      <div class="c-merit__body l-container ">
+        <h2 class="c-merit__bodyTitle">はじめての家づくりが具体的に進む、ご来店の<span> 3つのメリット</span></h2>
+        <h3 class="c-merit__bodyCap">WELCOME TO MODELHOUSE</h3>
+        <% if(typeof merit !="undefined" && typeof merit.bodyContent !="undefined" ){ %>
+          <% merit.bodyContent.forEach(item=>{%>
+            <div class="c-box c-box--2col <%  if(item.rowRev === true){ %> c-box__rowRev<%}%>">
+              <div class="c-box__item c-box__text">
+
+                <img class="c-box__logo" src="<%= item.logoImg %>" alt="<%= item.imgAlt %>">
+                <h3 class="c-box__title"><%- item.title %></h3>
+                <p class="c-box__desc"><%- item.desc %></p>
+
+
+              </div>
+              <div class="c-box__item c-box__img">
+                <img src="<%= item.meritIMG %>" alt="<%= item.imgAlt %>">
               </div>
             </div>
+            <%})%>
+
+              <% }%>
+
+
+
+
+      </div>
+    </section>
+    <section class="c-rePoint l-container--1740">
+      <div class="c-rePoint__header">
+        <div class="c-rePoint__headerImg">
+          <img src="/assets/img/RePoint/1x/Headerlogo.png" alt="">
+        </div>
+        <div class="c-rePoint__headerText">
+          <p class="c-rePoint__headerCap">RECOMMENDED POINT</p>
+          <h2 class="c-rePoint__headerTitle">イベント・見学会の<span>見どころ！</span></h2>
+        </div>
+      </div>
+      <div class="c-rePoint__body">
+        <div class="c-box c-box--4col">
+          <% if(typeof rePoint !='undefined' ){%>
+            <% rePoint.bodyContent.forEach(item=>{%>
+              <a href="#" class="c-box__item">
+                <img class="c-box__img" src="<%= item.imgUrl %>" alt="<%= item.boxTitle %>">
+                <h3 class="c-box__title">
+                  <%= item.boxTitle %>
+                </h3>
+                <p class="c-box__desc"><%- item.boxDesc %>
+
+                </p>
+              </a>
+              <% })%>
+                <% }%>
+
+
+        </div>
+      </div>
+
+    </section>
+    <section class="c-panel l-container" >
+      <h2 class="c-panel__cap">2日前までにWEBまたはお電話で「webcoco完全ご予約制見学会」に来場予約された方</h2>
+      <h3 class="c-panel__title">
+        絶対オトク！1,000円分のQUOカードプレゼント
+      </h3>
+      <a href="#"><img src="/assets/img/RePoint/1x/panel.png" alt="絶対オトク！1,000円分のQUOカードプレゼント"></a>
+     
+    </section>
+    <section class="c-slider" style="margin-bottom: 300px;">
+      <div id="my-custom-slider-demo" class="sidebar-slider">
+        <a id="sidebar-slider-prev" onclick="customNavToPrevSlide()"> ❮ </a>
+        <a id="sidebar-slider-next" onclick="customNavToNextSlide()"> ❯ </a>
+      
+        <div id="demo-slide1" class="widget_media_image">
+          <b class="widget-title">Slide 1 Title</b>
+          <a href="#"><img width="700" height="200" src="/assets/img/merit/1x/merit01IMG.png"></a>
+        </div>
+        <div id="demo-slide2" class="widget_media_image">
+          <b class="widget-title">Slide 2 Title</b>
+          <a href="#"><img width="700" height="200" src="/assets/img/merit/1x/merit02IMG.png"></a>
+        </div>
+        <div id="demo-slide3" class="widget_media_image">
+          <b class="widget-title">Slide 3 Title</b>
+          <a href="#"><img width="700" height="200" src="/assets/img/merit/1x/merit03IMG.png"></a>
+        </div>
       </div>
     </section>
   </main>

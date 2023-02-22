@@ -1,5 +1,5 @@
-.c-merit{
-
+.c-merit {
+    margin-top: 76px;
 }
 
 .c-merit__title {
@@ -7,13 +7,112 @@
     font-family: $notoSans;
     font-weight: 400;
     font-size: 3.6rem;
+    transform: translateX(16px);
+    margin-bottom: 52px;
 }
 
-.c-merit__case {
-    gap: 58px;
-transform: translateX(49px);
+.c-merit__header {
+    .c-merit__case {
+        gap: 54.5px;
+        transform: translateX(52px);
+    }
+
     .c-box__item {
-        flex: 0 1 calc(33.33% - 58px);
+        flex: 0 1 calc(33.33% - 57.5px);
+    }
+
+    .c-merit__caseImg {
+        margin-left: 31px;
     }
 }
 
+.c-merit__body {
+    max-width: 1250px;
+    padding-left: 23px;
+    margin-top: 120px;
+    text-align: center;
+    transform: translateX(15px);
+
+    .c-merit__bodyTitle {
+        font-family: $notoSans;
+        font-size: 3.4rem;
+        font-weight: 400;
+
+        span {
+            color: #252a6d;
+            font-size: 4.6rem;
+            font-family: $notoSerif;
+        }
+    }
+
+    .c-merit__bodyCap {
+        font-family: "Oswald";
+        font-weight: 300;
+        font-size: 4.8rem;
+        color: #000;
+        letter-spacing: 4.5px;
+        margin-top: 17px;
+
+        margin-bottom: 75px;
+    }
+
+    .c-box {
+        margin-bottom: 96px;
+
+        .c-box__text {
+            margin-top: -29px;
+            text-align: left;
+            width: 54%;
+        }
+
+        .c-box__title,
+        .c-box__desc {
+            padding-left: 4.3vw;
+            padding-right: 3.8vw;
+        }
+
+        .c-box__title {
+            font-size: 2.8rem;
+            font-family: $notoSans;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 23px;
+
+            span {
+                font-size: 3.6rem;
+                color: #252a6d;
+            }
+        }
+
+        .c-box__desc {
+            font-family: $notoSans;
+            font-size: 2.1rem;
+            letter-spacing: 0.6px;
+            line-height: 1.6;
+        }
+
+        .c-box__img {
+            width: 44%;
+         
+        }
+    }
+}
+
+.c-box__rowRev {
+    flex-direction: row-reverse !important;
+
+    .c-box__img {
+        text-align: left;
+        width: 56.7% !important;
+      
+        
+    }
+
+    .c-box__text {
+        .c-box__title,
+        .c-box__desc {
+            padding-right: unset;
+
+        }
+    }
+}
