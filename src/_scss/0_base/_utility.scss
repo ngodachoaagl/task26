@@ -45,3 +45,47 @@
     margin-left: -10px;
     margin-top: -20px;
 }
+
+.u-bar {
+    display: block;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+         
+        width: 58px;
+        
+     
+        height: 1px;
+      
+    }
+}
+
+.u-rounded {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: #231815;
+    color: #fff;
+    
+
+    span {
+        font-family: $notoSans;
+        font-size: 1.5rem;
+        line-height: 44px;
+    }
+}
+
+
+.u-bgBlack {
+    background-color: #231815;
+}
+
+.u-bgGray {
+    background-color: #565f64;
+}
+
+.u-bgGray2 {
+    background-color: #7a89a8;
+}

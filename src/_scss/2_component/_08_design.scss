@@ -1,0 +1,84 @@
+.c-design {
+    margin-top: 123px;
+}
+
+.c-design__body {
+    position: relative;
+    
+    .c-design__box {
+        position: absolute;
+        width: 62.7%;
+        height: 527px;
+        right: 0;
+        top: -37%;
+        background-color: #ededed;
+    }
+
+    .c-design__main {
+        flex-wrap: wrap;
+        margin-top: 77px;
+        position: relative;
+        z-index: 5;
+        display: flex;
+        max-width: 1585px;
+        margin-left: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+      
+        & > * {
+            flex-shrink: 1;
+        }
+    }
+
+    .c-design__text {
+        width: 42%;
+        margin-right: 4.8%;
+        flex-grow: 1;
+    }
+
+    .c-design__title {
+       
+        letter-spacing: 4.5px;
+        margin-bottom: 17px;
+    }
+
+    .u-bar {
+        margin-bottom: 20px;
+
+        &::before {
+            width: 58px;
+            background-color: #231815;
+            top: 10px;
+            left: 0;
+        }
+    }
+
+    .c-design__cap {
+        margin-top: 7.5%;
+        font-family: $notoSans;
+        font-size: 2.7rem;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    .c-design__desc {
+        margin-top: 5.3%;
+        font-family: $notoSans;
+        font-size: 1.9rem;
+        font-weight: 300;
+        line-height: 1.77;
+    }
+
+    .c-design__iframe {
+        padding-top: 7.6%;
+        width: 46%;
+        flex-grow: 1;
+
+        iframe {
+            width: 100%;
+            max-width: 702px;
+            height: 390px;
+          
+        }
+    }
+}

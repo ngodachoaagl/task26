@@ -1,72 +1,62 @@
-#my-custom-slider-demo {
-    display: block;
-    overflow: hidden;
+/* Slideshow container */
+.c-slider {
+    z-index: 9;
+}
+
+.slideshow-container {
+    z-index: 9;
+    width: fit-content;
     position: relative;
+  
 }
 
-#my-custom-slider-demo #sidebar-slider-prev,
-#my-custom-slider-demo #sidebar-slider-next {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
-    display: inline-block;
-    font-size: 32px;
-    height: 48px;
-    line-height: 42px;
-    opacity: 0;
-    padding: 0;
     position: absolute;
-    text-align: center;
-    top: calc(50% - 24px);
-    transition: 0.2s all;
-    width: 48px;
-    z-index: 5;
+    top: 105.3%;
+    width: auto;
+    z-index: 9;
+   
+    transition: 0.6s ease;
+   
+    user-select: none;
+  
+
 }
 
-#my-custom-slider-demo #sidebar-slider-next {
-    right: 0;
+/* Position the "next button" to the right */
+.next {
+    left: 96.3%;
+   
 }
 
-#my-custom-slider-demo:hover #sidebar-slider-prev,
-#my-custom-slider-demo:hover #sidebar-slider-next {
-    opacity: 1;
+.prev {
+    left: 91.2%;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+   
 }
 
-#my-custom-slider-demo .widget_media_image {
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    transition: 0.8s all;
-    z-index: 0;
-    width: 100%;
+
+
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
-#my-custom-slider-demo .widget_media_image:first-of-type,
-#my-custom-slider-demo .widget_media_image.active {
-    opacity: 1;
-    z-index: 1;
-}
-
-#my-custom-slider-demo .widget_media_image img {
-    height: auto;
-    width: 100%;
-}
-
-#my-custom-slider-demo .widget_media_image b {
-    background-color: rgba(0, 0, 0, 0.5);
-    bottom: 0;
-    color: #fff;
-    display: inline-block;
-    font-size: 14px;
-    left: 0;
-    padding: 10px 20px;
-    position: absolute;
-    text-transform: uppercase;
-}
-@media all and (max-width: 600px) {
-    #my-custom-slider-demo .widget_media_image b {
-        display: none;
-    }
+@keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
 }

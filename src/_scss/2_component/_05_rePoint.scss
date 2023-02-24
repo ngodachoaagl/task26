@@ -1,5 +1,5 @@
 .c-rePoint {
-    transform: translateX(-2px);
+    
     margin-top: 167px;
     background-color: #ededed;
     height: 755px;
@@ -48,12 +48,16 @@
 
 .c-rePoint__body {
     .c-box {
-        gap: 25px;
+
     }
 
     .c-box__item {
         background-color: #fff;
-        padding: 23px 20px 45.5px;;
+        padding: 23px 20px 45.5px;
+
+        &:not(:last-of-type) {
+            margin-right: 25px;
+        }
     }
 
     .c-box__img {

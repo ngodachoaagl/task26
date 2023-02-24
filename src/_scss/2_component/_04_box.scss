@@ -30,3 +30,9 @@
     }
 }
 
+.c-box--5col {
+    .c-box__item {
+        width: calc(100% / 5);
+    }
+}
+
