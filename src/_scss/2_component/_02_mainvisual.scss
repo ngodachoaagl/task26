@@ -1,13 +1,21 @@
 .c-mainvisual {
-   
-
 }
 
 .c-mainvisual__inner {
     position: relative;
-    
-  
+    @include sp {
+        height: 445px;
+        background-image: url(/assets/img/mainvisual/banner.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
 
+.c-mainvisual__img {
+    @include sp {
+        display: none;
+    }
 }
 
 .c-mainvisual__text {
@@ -20,10 +28,31 @@
     align-items: center;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 112px 48px 80px;
+    @include tab {
+        top: 50%;
+        padding: 61px 24px 40px;
+    }
+    @include sp {
+        width: 217px;
+        height: 231px;
+        top: 50%;
+        left: 50%;
+        padding: 57px 0 0;
+    }
+    
 
     .c-mainvisual__logo {
         margin-bottom: 55px;
         transform: translateX(-2px);
+        @include tab {
+            transform: scale(75%);
+            margin-bottom: 35px;
+        }
+        @include sp {
+            width: 113.5px;
+            transform: none;
+            margin-bottom: 29px;
+        }
     }
 
     .c-mainvisual__title {
@@ -31,17 +60,28 @@
     }
 
     .c-mainvisual__desc {
-        font-family: $notoSerif;
-      
+        font-family: $Serif-Bold;
         font-size: 2rem;
         letter-spacing: -2.2px;
         transform: translateX(-12px);
         color: #231815;
         margin-bottom: 40px;
-       
+        @include tab {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+        }
+        @include sp {
+            font-size: 0.9rem;
+            letter-spacing: 0;
+            transform: translateX(-3px);
+        }
     }
 
     .c-mainvisual__cap {
-        transform: translate(3px, -4px);;
+        transform: translate(3px, -4px);
+        @include tab {
+            width: 161px;
+            transform: translate(8px, -6px);
+        }
     }
 }

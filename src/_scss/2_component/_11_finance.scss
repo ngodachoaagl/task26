@@ -1,5 +1,5 @@
 .c-finance {
-    margin-top: 96.5px;
+    margin-top: 92.1px;
     background-color: #ededed;
     padding: 93px 40px  64px;
 
@@ -30,7 +30,7 @@
     .c-finance__cap {
         padding: 4px 56.1px 17px;
         margin-top: 60px;
-        font-family: $notoSans;
+        font-family: $San-Reg;
         font-weight: 400;
         font-size: 3rem;
         color: #fff;
@@ -56,13 +56,22 @@
     .c-finance__panel--l {
         margin-right: 5%;
         padding: 9% 6% 6.1% 6.7%;
+        @include lg {
+            padding-left: 5.3%;
+        }
 
         .c-finance__desc {      
-            font-family: $notoSans;
+            font-family: $San-Reg;
             font-size: 2.2rem;
             color: #231815;
             letter-spacing: -0.2px;
             transform: translateY(-8px);
+            @include lg {
+                font-size: 1.8rem;
+            }
+            @include tab {
+                font-size: 1.6rem;
+            }
 
             &:not(:last-of-type) {
                 margin-bottom: 36px;
@@ -74,13 +83,16 @@
     .c-finance__panel--r {
         position: relative;
         padding: 8.1% 6% 6.1% 6.8%;
-        font-family: $notoSans;
+        font-family: $San-Reg;
 
         .c-finance__icon {
             position: absolute;
             top: -4.1%;
             right: -7%;
             width: 33.9%;
+            @include tab {
+                width: 27%;
+            }
         }
 
         .c-finance__pnCap {
@@ -88,15 +100,24 @@
             font-weight: bold;
             color: #231815;
             padding-left: 7px;
+            @include tab {
+                font-size: 2.2rem;
+            }
         }
 
         .c-finance__price {
             font-weight: bold;
             color: #7a89a8;
-            font-size: 90px;
+            font-size: 9rem;
+            @include tab {
+                font-size: 6rem;
+            }
 
             span {
-                font-size: 36px;
+                font-size: 3.6rem;
+                @include tab {
+                    font-size: 2.4rem;
+                }
             }
         }
 
@@ -106,6 +127,9 @@
             color: #231815;
             font-size: 2.2rem;
             letter-spacing: -0.5px;
+            @include tab {
+                font-size: 1.6rem;
+            }
         }
     }
 }

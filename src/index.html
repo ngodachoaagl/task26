@@ -19,12 +19,16 @@
     </section>
     <section class="c-merit l-container--1600">
       <h2 class="c-merit__title">家づくりの、こんな不安やお悩みないですか？</h2>
+
       <div class="c-merit__header">
         <div class="c-merit__case c-box c-box--3col">
           <% if(typeof merit !='undefined' ) { %>
             <% merit.headerContent.forEach(item=>{%>
-              <div class="c-box__item">
-                <img class="c-merit__caseImg" src="<%= item.caseImgUrl %>" alt="<%= item.caseMess %>">
+              <div class="c-box__item  <%  if(item.alignRight === true){ %> c-merit__alignR<%}%>">
+
+                <h2 class="c-merit__caseNum">
+                  <%= item.caseNum %>
+                </h2>
                 <div class="u-speech__bubble">
                   <p class="u-speech__mess">
                     <%= item.caseMess %>
@@ -42,7 +46,8 @@
         </div>
       </div>
       <div class="c-merit__body l-container ">
-        <h2 class="c-merit__bodyTitle">はじめての家づくりが具体的に進む、ご来店の<span> 3つのメリット</span></h2>
+        <h2 class="c-merit__bodyTitle pc--only">はじめての家づくりが具体的に進む、ご来店の<span>3つのメリット</span></h2>
+        <h2 class="c-merit__bodyTitle sp--only">はじめての家づくりが具体的に進む、<br>ご来店の<span>3つのメリット</span></h2>
         <h3 class="c-merit__bodyCap c-title">WELCOME TO MODELHOUSE</h3>
         <% if(typeof merit !="undefined" && typeof merit.bodyContent !="undefined" ){ %>
           <% merit.bodyContent.forEach(item=>{%>
@@ -72,6 +77,7 @@
       <div class="c-rePoint__header">
         <div class="c-rePoint__headerImg">
           <img src="/assets/img/RePoint/1x/Headerlogo.png" alt="">
+
         </div>
         <div class="c-rePoint__headerText">
           <p class="c-rePoint__headerCap">RECOMMENDED POINT</p>
@@ -99,12 +105,19 @@
       </div>
 
     </section>
-    <section class="c-panel l-container">
+    <section class="c-panel c-panel--top">
       <h2 class="c-panel__cap">2日前までにWEBまたはお電話で「webcoco完全ご予約制見学会」に来場予約された方</h2>
       <h3 class="c-panel__title">
         絶対オトク！1,000円分のQUOカードプレゼント
       </h3>
-      <a href="#"><img src="/assets/img/RePoint/1x/panel.png" alt="絶対オトク！1,000円分のQUOカードプレゼント"></a>
+      <a href="#">
+        <picture>
+          <source media="(max-width:767px)" srcset="/assets/img/RePoint/1x/panel-topSP.png">
+
+          <img src="/assets/img/RePoint/1x/panel-top.png" alt="絶対オトク！1,000円分のQUOカードプレゼント">
+        </picture>
+
+      </a>
 
     </section>
     <section class="c-design">
@@ -113,24 +126,31 @@
 
 
           <div class="mySlides fade">
+            <picture>
+              <source media="(max-width:767px)" srcset="/assets/img/Slider/1x/slider1SP.png">
+              <img src="/assets/img/Slider/1x/slider1.png">
+            </picture>
+          </div>
 
-            <img src="/assets/img/Slider/1x/slider1.png">
+          <div class="mySlides fade">
+
+        <picture>
+          <source media="(max-width:767px)" srcset="/assets/img/Slider/1x/slider1SP.png">
+          <img src="/assets/img/Slider/1x/slider1.png">
+        </picture>
 
           </div>
 
           <div class="mySlides fade">
 
-            <img src="/assets/img/Slider/1x/slider1.png">
+            <picture>
+              <source media="(max-width:767px)" srcset="/assets/img/Slider/1x/slider1SP.png">
+              <img src="/assets/img/Slider/1x/slider1.png">
+            </picture>
 
           </div>
 
-          <div class="mySlides fade">
 
-            <img src="/assets/img/Slider/1x/slider1.png">
-
-          </div>
-
-          <!-- Next and previous buttons -->
           <a class="prev" onclick="plusSlides(-1)"><img src="/assets/img/Slider/1x/btnPre.png" alt=""></a>
           <a class="next" onclick="plusSlides(1)"><img src="/assets/img/Slider/1x/btnNext.png" alt=""></a>
         </div>
@@ -159,7 +179,7 @@
         </div>
       </div>
     </section>
-    <section class="c-plan">
+    <!-- <section class="c-plan">
 
       <h2 class="c-plan__title c-title">PLAN</h2>
 
@@ -192,18 +212,28 @@
         </div>
         <div class="c-plan__row c-plan__row--3">
           <span class="c-plan__th">設備・仕様</span>
-          <a href="#"> <span class="c-plan__td c-table--spbdr">W断熱/TOPS工法</span></a>
-          <a href="#"> <span class="c-plan__td c-table--spbdr">無垢材・自然素材</span></a>
-          <a href="#"> <span class="c-plan__td c-table--spbdr">高性能住宅</span></a>
-          <a href="#"> <span class="c-plan__td c-table--spbdr">玄関共有タイプ</span></a>
-          <a href="#"> <span class="c-plan__td c-table--spbdr">防音構造床</span></a>
+          <div class="c-plan__tdMain">
+          <div class="c-plan__td">
+          <a href="#"> <span class=" c-table--spbdr">W断熱/TOPS工法</span></a>
+          </div>
+              <div class="c-plan__td">
+          <a href="#"> <span class=" c-table--spbdr">無垢材・自然素材</span></a>
+          </div>
+               <div class="c-plan__td">
+          <a href="#"> <span class=" c-table--spbdr">高性能住宅</span></a>
+          </div>
+         
+         <div class="c-plan__td"> <a href="#"> <span class=" c-table--spbdr">玄関共有タイプ</span></a></div>
+         <div class="c-plan__td"> <a href="#"> <span class=" c-table--spbdr">防音構造床</span></a></div>
+          </div>
         </div>
         <div class="c-plan__row c-plan__row--4">
           <span class="c-plan__th">空間</span>
-          <a href="#"> <span class="c-plan__td c-table--spbdr">二世帯・多世帯</span></a>
-          <a href="#"> <span class="c-plan__td c-table--spbdr">1、2階リビング</span></a>
-          <a href="#"> <span class="c-plan__td c-table--spbdr">吹抜け</span></a>
-
+     <div class="c-plan__tdMain">
+         <div class="c-plan__td"> <a href="#"> <span class=" c-table--spbdr">二世帯・多世帯</span></a></div>
+         <div class="c-plan__td"> <a href="#"> <span class=" c-table--spbdr">1、2階リビング</span></a></div>
+         <div class="c-plan__td"> <a href="#"> <span class=" c-table--spbdr">吹抜け</span></a></div>
+     </div>
         </div>
 
 
@@ -248,6 +278,7 @@
               <h3 class="c-web__Bcap">
                 <%= item.cap %>
               </h3>
+              <p class="c-web__bar"></p>
               <h4 class="c-web__Bdesc">
                 <%= item.desc %>
               </h4>
@@ -285,6 +316,44 @@
         </div>
       </div>
     </section>
+    <section class="c-access c-box c-box--2col">
+      <div class="c-access__map c-box__item">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d17906.90372806965!2d132.9970583647665!3d34.05226475996055!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2s!4v1677391038569!5m2!1sja!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="c-access__content c-box__item">
+        <div class="c-access__main">
+        <h2 class="c-access__title c-title">ACCESS</h2>
+        <h3 class="c-access__cap">完全ご予約制見学会</h3>
+        <div class="c-access__body">
+          <div class="c-access__item">
+            <a class="c-access__tag" href="#">開催日</a>
+            <p class="c-access__desc">8月20日（土）・21日（日）</p>
+          </div>
+             <div class="c-access__item">
+            <a class="c-access__tag" href="#">時間</a>
+            <p class="c-access__desc">10：00～17：00 ※完全予約制</p>
+          </div>
+             <div class="c-access__item">
+            <a class="c-access__tag" href="#">開催場所</a>
+            <p class="c-access__desc">〒000-0000 愛媛県今治市000-0</p>
+          
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+     <section class="c-panel l-container c-panel--bot">
+      <h2 class="c-panel__cap">2日前までにWEBまたはお電話で「webcoco完全ご予約制見学会」に来場予約された方</h2>
+      <h3 class="c-panel__title">
+        絶対オトク！1,000円分のQUOカードプレゼント
+      </h3>
+      <a href="#"><img src="/assets/img/RePoint/1x/panel.png" alt="絶対オトク！1,000円分のQUOカードプレゼント"></a>
+
+    </section>
+    <section class="c-contact">
+    <h2 class="c-contact__title c-title">CONTACT FORM</h2>
+    </section> -->
+
   </main>
   <!-- @@content -->
 

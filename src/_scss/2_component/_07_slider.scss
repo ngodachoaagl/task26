@@ -1,18 +1,29 @@
 /* Slideshow container */
 .c-slider {
     z-index: 9;
+    padding-right: 50px !important;
 }
 
 .slideshow-container {
+    padding-right: 75px;
     z-index: 9;
     width: fit-content;
     position: relative;
+    @include sp {
+        padding-right: 15px;
+    }
   
 }
 
 /* Hide the images by default */
 .mySlides {
     display: none;
+    @include sp {
+        img {
+            
+        }
+    }
+ 
 }
 
 /* Next & previous buttons */
@@ -21,24 +32,34 @@
     cursor: pointer;
     position: absolute;
     top: 105.3%;
-    width: auto;
+    width: 3.5%;
     z-index: 9;
-   
     transition: 0.6s ease;
-   
     user-select: none;
-  
-
+    @include sp {
+        width: 31px;
+        top: 106%;
+    }
+   
 }
 
 /* Position the "next button" to the right */
 .next {
-    left: 96.3%;
-   
+    left: 91.6%;
+    @include sp {
+        left: unset;
+        right: 4.8%;
+    }
+
 }
 
 .prev {
-    left: 91.2%;
+    left: 86.7%;
+    @include sp {
+        left: unset;
+      
+        right: 16.2%;
+    }
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,

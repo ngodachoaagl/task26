@@ -35,3 +35,16 @@ body {
     margin: 0 auto;
 }
 //-------------------------------------------------------
+.sp--only {
+    display: none;
+    @include sp {
+        display: block;
+    }
+}
+
+.pc--only {
+    display: block;
+    @include sp {
+        display: none;
+    }
+}

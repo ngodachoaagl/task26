@@ -1,10 +1,14 @@
 .c-design {
     margin-top: 123px;
+    @include sp {
+        margin-top: 49px;
+    }
 }
 
 .c-design__body {
     position: relative;
-    
+  
+
     .c-design__box {
         position: absolute;
         width: 62.7%;
@@ -24,9 +28,14 @@
         margin-left: auto;
         padding-left: 30px;
         padding-right: 30px;
-      
+
         & > * {
             flex-shrink: 1;
+        }
+        @include sp{
+            margin-top: 50px;
+            padding-left: 32px;
+            padding-right: 13px;
         }
     }
 
@@ -34,12 +43,26 @@
         width: 42%;
         margin-right: 4.8%;
         flex-grow: 1;
+        @include sp{
+            width: 100%;
+             margin-right: unset;
+        }
     }
 
     .c-design__title {
-       
         letter-spacing: 4.5px;
         margin-bottom: 17px;
+        @include lg {
+            font-size: 4.2rem;
+        }
+        @include tab {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+        @include sp{
+            font-size: 2.4rem;
+            letter-spacing: 2.25px;
+        }
     }
 
     .u-bar {
@@ -50,35 +73,76 @@
             background-color: #231815;
             top: 10px;
             left: 0;
+            @include tab {
+                top: 0;
+            }
         }
     }
 
     .c-design__cap {
         margin-top: 7.5%;
-        font-family: $notoSans;
+        font-family: $San-Reg;
         font-size: 2.7rem;
         font-weight: 400;
         line-height: 1.4;
+        @include lg {
+            font-size: 2.2rem;
+        }
+        @include tab {
+            font-size: 2rem;
+        }
+        @include sp{
+           margin-top: 8.5%;
+             font-size: 1.3rem;
+             letter-spacing: 0.5px;
+        }
     }
 
     .c-design__desc {
         margin-top: 5.3%;
-        font-family: $notoSans;
+        font-family: $San-Light;
         font-size: 1.9rem;
         font-weight: 300;
         line-height: 1.77;
+        @include lg {
+            font-size: 1.6rem;
+        }
+        @include tab {
+            font-size: 1.4rem;
+        }
+         @include sp{
+        
+             font-size: 1rem;
+           
+        }
     }
 
     .c-design__iframe {
         padding-top: 7.6%;
         width: 46%;
         flex-grow: 1;
-
+@include sp{
+    width: 100%;
+    margin-top: 23px;
+    padding-left: 5px;
+}
         iframe {
             width: 100%;
             max-width: 702px;
             height: 390px;
-          
+            @include lg {
+                width: 500px;
+                height: 278px;
+            }
+            @include tab {
+                width: 100%;
+           
+            }
+            @include sp{
+                max-width: 302px;
+                height: 168px;
+                
+            }
         }
     }
 }

@@ -5,18 +5,19 @@
     .c-web__header {
         color: #231815;
         text-align: center;
-        font-family: $notoSans;
+
+        font-family: $San-Reg;
     }
 
     .c-web__title {
         transform: translateX(24px);
         font-size: 3.4rem;
         font-weight: 400;
-        letter-spacing: -1px;
+        letter-spacing: -0.8px;
         margin-bottom: 27px;
 
         span {
-            font-family: $notoSerif;
+            font-family: $Serif-Regular;
             font-size: 4.6rem;
             color: #252a6d;
             letter-spacing: 12.5px;
@@ -27,31 +28,40 @@
         font-weight: 300;
         font-size: 2.7rem;
         line-height: 1.4;
+        transform: translateX(26px);
     }
 
     .c-web__body {
         margin-top: 72px;
         transform: translateX(43.2px);
-        flex-grow: 1;
+
         display: flex;
+        @include lg {
+            transform: translateX(0);
+        }
     }
 
     .c-web__item {
-        font-family: $notoSans;
+        font-family: $San-Reg;
         position: relative;
-        padding: 56px 25px 51px 30px;
+
+        padding: 2.35% 1.2% 2.9%;
         text-align: center;
 
-        width: calc(20% - 63px);
+        width: calc(20% - 3.62%);
         color: #fff;
-        white-space: nowrap;
 
+        @include lg {
+            padding: 1% 1.2%;
+            flex-grow: 1;
+        }
+      
         &:first-of-type {
             transform: translateX(1.6px);
         }
 
         &:not(:last-of-type) {
-            margin-right: 64.5px;
+            margin-right: 3.72%;
         }
 
         &:not(:first-of-type) {
@@ -60,74 +70,136 @@
                 position: absolute;
                 width: 0;
                 height: 0;
-                left: -38px;
+                left: -13%;
                 top: 48%;
                 border-top: 8px solid transparent;
                 border-bottom: 8px solid transparent;
                 border-left: 8px solid #000;
             }
         }
+
+        &:nth-of-type(2) {
+            ::before {
+                left: -12%;
+            }
+        }
     }
 
     .c-web__Bicon {
+        margin-bottom: 20px;
+        @include lg {
+            width: 35px;
+        }
+        @include tab {
+            width: 27px;
+        }
     }
 
     .c-web__Bcap {
-        font-size: 21px;
+        font-size: 2.1rem;
         font-weight: 400;
         margin-bottom: 11px;
+
+        &::before {
+            content: none !important;
+        }
+        @include lg {
+            font-size: 1.5rem;
+        }
+        @include tab {
+            font-size: 1.2rem;
+        }
+        
     }
 
     .c-web__Bdesc {
         padding-top: 13px;
-        border-top: 1px solid #fff;
-        font-size: 16px;
+
+        font-size: 1.6rem;
         font-weight: 400;
+        @include lg {
+            font-size: 1.3rem;
+        }
+        @include tab {
+            font-size: 1rem;
+        }
+
+        &::before {
+            content: none !important;
+        }
+    }
+
+    .c-web__bar {
+        border-top: 1px solid #fff;
     }
 
     .c-box__itemDeve {
         .c-web__Bicon {
-            width: 17.4%;
-            transform: translateX(-1.5px);
-            margin-bottom: 28px;
+            transform: translateX(-2px);
+        }
+
+        .c-web__Bcap {
+            transform: translate(-11px, -1px);
+        }
+
+        .c-web__Bdesc {
+            transform: translateX(-5px);
         }
     }
 
     .c-box__itemUser {
         .c-web__Bicon {
-            width: 15.5%;
+            transform: translateX(4px);
+        }
 
-            transform: translate(1.5px, -7px);
-            margin-bottom: 19px;
+        .c-web__Bcap {
+            transform: translate(4px, -1px);
+        }
+
+        .c-web__Bdesc {
+            transform: translateX(2px);
         }
     }
 
     .c-box__itemAnketo {
         .c-web__Bicon {
-            width: 14.9%;
+            transform: translateX(2px);
+        }
 
-            transform: translate(-1.5px, -2px);
-            margin-bottom: 21px;
+        .c-web__Bcap {
+            transform: translate(0, -1px);
+        }
+
+        .c-web__Bdesc {
+            transform: translateX(-2px);
         }
     }
 
     .c-box__itemLett {
         .c-web__Bicon {
-            width: 14.9%;
+            transform: translateX(-1px);
+        }
 
-            transform: translate(-1.5px, 1px);
-            margin-bottom: 26px;
+        .c-web__Bcap {
+            transform: translate(0, -1px);
+        }
+
+        .c-web__Bdesc {
+            transform: translateX(-2px);
         }
     }
 
     .c-box__itemGift {
         .c-web__Bicon {
-            width: 15.9%;
+            transform: translateX(-3px);
+        }
 
-            transform: translate(-1.5px, -2px);
+        .c-web__Bcap {
+            transform: translate(0, -1px);
+        }
 
-            transform: translate(-5.5px, -1px);
-            margin-bottom: 23px;
+        .c-web__Bdesc {
+            transform: translateX(-2px);
         }
     }
 
@@ -140,8 +212,14 @@
     .c-web__banner {
         background-color: #231815;
         color: #fff;
-        font-family: $notoSans;
-        padding: 60px 75px 50px;
+        font-family: $San-Reg;
+        padding: 60px 6.2% 50px;
+        @include lg {
+            padding: 60px 3.8% 50px;
+        }
+        @include tab {
+            padding: 30px 3.8%;
+        }
     }
 
     .c-web__btn {
@@ -152,8 +230,10 @@
         font-size: 2.3rem;
         font-weight: bold;
         padding: 9px 27px;
-        margin-right: 38px;
         margin-left: 12px;
+        @include lg {
+            font-size: 1.9rem;
+        }
     }
 
     .c-web__bannerTitle {
@@ -162,6 +242,11 @@
         font-weight: 300;
         transform: translateY(5px);
         letter-spacing: 1.2px;
+        margin-left: 38px;
+        @include lg {
+            font-size: 2.6rem;
+            margin-left: 25px;
+        }
     }
 
     .c-web__bannerDesc {
@@ -170,12 +255,18 @@
         font-weight: 300;
         margin-left: 19px;
         letter-spacing: 0.4px;
+        @include lg {
+            font-size: 1.8rem;
+        }
     }
 
     .c-web__collect {
-        padding: 37px 37px 26px;
+        padding: 37px 37px 51px;
         border: 1px solid #231815;
         border-top: none;
+        @include lg {
+            padding: 25px 25px 30px;
+        }
     }
 
     .c-box {
@@ -186,14 +277,15 @@
         }
     }
 
-    .c-box__item {
+    .c-box__item {  
         width: 20%;
         text-align: center;
-        // display: flex;
-        // justify-content: center;
-        // flex-direction: column;
+
         align-items: center;
-        padding: 25px 15px 24px;
+        padding: 13px 14px 28px;
+        @include lg {
+            padding: 13px 12px;
+        }
 
         &:first-of-type {
             width: 20.6%;
@@ -219,16 +311,68 @@
             border-right: 1px solid #aeaeae;
         }
 
-        .c-box__img {
-        }
-
         .c-box__desc {
-            font-family: $notoSans;
+            font-family: $San-Reg;
             font-size: 1.5rem;
             color: #231815;
             font-weight: 400;
+            letter-spacing: -1px;
+            @include lg {
+                font-size: 1.2rem;
+            }
         }
     }
 
+    .c-box__row--1 {
+        .c-box__img {
+            transform: translateX(-8px);
+            margin-bottom: 6px;
+            @include lg {
+                transform: translateX(0);
+            }
+        }
 
+        .c-box__desc {
+            transform: translate(-8px, -2px);
+        }
+
+        .c-box__item:last-of-type {
+            .c-box__desc {
+                transform: translate(8px, -2px);
+            }
+        }
+
+        .c-box__temp {
+            .c-box__img {
+                transform: translateX(5px);
+            }
+        }
+    }
+
+    .c-box__row--2 {
+        .c-box__img {
+            transform: translate(-8px, 5px);
+            margin-bottom: 2px;
+        }
+
+        .c-box__desc {
+            transform: translateX(-9px);
+        }
+
+        .c-box__star {
+            .c-box__img {
+                margin-bottom: 25px;
+            }
+        }
+
+        .c-box__zoom {
+            .c-box__img {
+                transform: translate(4px, 5px);
+            }
+
+            .c-box__desc {
+                transform: translateX(4px);
+            }
+        }
+    }
 }

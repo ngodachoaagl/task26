@@ -25,16 +25,19 @@
     "title": "家づくりの、こんな不安やお悩みないですか？",
     "headerContent": [
       {
-        "caseImgUrl": "/assets/img/merit/1x/case1.png",
+        "caseNum": "01",
         "caseMess": "子育てにはどんな家が良いんだろう？"
+       
       },
       {
-        "caseImgUrl": "/assets/img/merit/1x/case2.png",
+        "caseNum": "02",
         "caseMess": "理想の家って実現できるの？",
-        "caseCaption": "いろいろとこだわった"
+        "caseCaption": "いろいろとこだわった",
+        "alignRight": true
+
       },
       {
-        "caseImgUrl": "/assets/img/merit/1x/case3.png",
+        "caseNum": "03",
         "caseMess": "暮らしのスタイルがイメージできない",
         "caseCaption": "家は建てたいけど"
       }
@@ -50,7 +53,7 @@
       {
         "logoImg": "/assets/img/merit/1x/merit02.png",
         "title": "土地情報<span>1000件以上</span>が見放題!",
-        "desc": "愛媛県の最新の土地情報から、学区・最寄りの駅などご希望の条件でお好きな土地をご覧いただけます。さらに、地盤予測や付帯工事費なども含め、建てた後も安心して暮らせる総合的な土地のアドバイスをいたします。 ",
+        "desc": "愛媛県の最新の土地情報から、学区・最寄りの駅などご希望の条件でお好きな土地をご覧いただけます。さらに、地盤予測や付帯工事費なども含め、建てた後も安心して暮らせる総合的な土地のアドバイスを いたします。 ",
         "meritIMG": "/assets/img/merit/1x/merit02IMG.png",
         "imgAlt": "土地情報1000件以上が見放題!!",
         "rowRev": true
@@ -91,35 +94,35 @@
   "web": {
     "body": [
       {
-        "icon": "/assets/img/web/SVG/deve.svg",
+        "icon": "/assets/img/web/SVG/images/deve.png",
         "bgColor": "u-bgBlack",
         "cap": "WEB予約",
         "desc": "入力フォームに必要事項を入力",
         "itemName": "Deve"
       },
       {
-        "icon": "/assets/img/web/SVG/user.svg",
+        "icon": "/assets/img/web/SVG/images/user.png",
         "bgColor": "u-bgGray",
         "cap": "ご来場",
         "desc": "来場されたら受付をお願いします",
         "itemName": "User"
       },
       {
-        "icon": "/assets/img/web/SVG/anketo.svg",
+        "icon": "/assets/img/web/SVG/images/anketo.png",
         "bgColor": "u-bgGray",
         "cap": "アンケート記入",
         "desc": "アンケート記入後、丁寧にご説明",
         "itemName": "Anketo"
       },
       {
-        "icon": "/assets/img/web/SVG/lett.svg",
+        "icon": "/assets/img/web/SVG/images/lett.png",
         "bgColor": "u-bgGray",
         "cap": "ご見学・ご説明",
         "desc": "何でもお気軽に相談してください",
         "itemName": "Lett"
       },
       {
-        "icon": "/assets/img/web/SVG/gift.svg",
+        "icon": "/assets/img/web/SVG/images/gift.png",
         "bgColor": "u-bgGray2",
         "cap": "特典プレゼント！",
         "desc": "QUOカードプレゼント",
@@ -151,7 +154,7 @@
           {
             "iconIMG": "/assets/img/web/keep.png",
             "alt": "スタッフのマスク着用義務化",
-            "desc": "ソーシャルディスタンス（2m）を維持した打合せ",
+            "desc": "ソーシャルディスタンス<br>（2m）を維持した打合せ",
             "name": "keep"
           },
           {

@@ -1,11 +1,22 @@
 .c-rePoint {
-    
     margin-top: 167px;
     background-color: #ededed;
     height: 755px;
     position: relative;
-    padding: 146px 78px 77px;
-    
+    padding: 146px 4% 77px;
+    @include lg {
+        padding-bottom: 40px;
+        height: 620px;
+    }
+    @include tab {
+        padding: 90px 15px 40px;
+        height: 590px;
+    }
+    @include sp {
+        margin-top: 73px;
+        padding: 75px 12px 40px;
+        height: unset;
+    }
 }
 
 .c-rePoint__header {
@@ -14,41 +25,90 @@
 
         top: -22%;
         left: 11.9%;
+
+        @include lg {
+            left: 2%;
+        }
+        @include tab {
+            width: 325px;
+        }
+        @include sp {
+            width: 215px;
+            top: 95%;
+            left: unset;
+            // left: 43.8%;
+            right: 0;
+          
+        }
     }
 
     .c-rePoint__headerText {
         position: absolute;
         top: -11%;
         right: 2.6%;
+        @include sp {
+            top: -4.1%;
+            right: 3.3%;
+        }
     }
 
     .c-rePoint__headerCap {
-        font-family: "Oswald Light";
+        font-family: $Oswald-Light;
         font-weight: 300;
         font-size: 8.3rem;
         letter-spacing: 8px;
         margin-bottom: -7px;
         color: #000;
+
+        @include lg {
+            font-size: 6rem;
+        }
+        @include tab {
+            font-size: 4.5rem;
+        }
+        @include sp {
+            font-size: 3rem;
+            letter-spacing: 3.35px;
+            margin-bottom: -2px;
+        }
     }
 
     .c-rePoint__headerTitle {
         text-align: right;
-        font-family: $notoSans;
+        font-family: $San-Reg;
         font-weight: 400;
         font-size: 3.4rem;
         letter-spacing: -0.3px;
 
+        @include lg {
+            font-size: 3rem;
+        }
+        @include tab {
+            font-size: 2.6rem;
+        }
+        @include sp {
+            font-size: 1.3rem;
+        }
+
         span {
-            font-family: $notoSerif;
+            font-family: $Serif-Regular;
             font-size: 4.6rem;
             color: #252a6d;
+            @include lg {
+                font-size: 4rem;
+            }
+            @include sp {
+                font-size: 1.7rem;
+            }
         }
     }
 }
 
 .c-rePoint__body {
     .c-box {
-
+        @include sp {
+            flex-wrap: wrap;
+        }
     }
 
     .c-box__item {
@@ -57,27 +117,79 @@
 
         &:not(:last-of-type) {
             margin-right: 25px;
+            @include sp {
+                margin-right: 0;
+            }
+        }
+
+        &:nth-of-type(3) {
+            @include sp {
+                .c-box__title {
+                    letter-spacing: -0.3px;
+                }
+            }
+        }
+
+        &:nth-of-type(4) {
+            @include sp {
+                .c-box__desc {
+                    padding-right: 3px;
+                }
+            }
+        }
+
+        &:nth-of-type(2n) {
+            @include sp {
+                margin-left: 10px;
+            }
+        }
+        @include lg {
+            padding: 15px 15px 20px;
+        }
+        @include sp {
+            width: calc(50% - 10px);
+            flex-grow: 1;
+            padding: 10px 10px 16px;
+            margin-bottom: 16px;
         }
     }
 
     .c-box__img {
         margin-bottom: 24px;
+        @include sp {
+            margin-bottom: 10px;
+        }
     }
 
     .c-box__title {
         margin-bottom: 13px;
-        font-family: $notoSans;
+        font-family: $San-Reg;
         font-weight: 400;
         font-size: 2.3rem;
-      
+        @include lg {
+            font-size: 1.8rem;
+        }
+        @include sp {
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        }
     }
 
     .c-box__desc {
-        font-family: $notoSans;
+        font-family: $San-Light;
         font-weight: 300;
         font-size: 1.9rem;
         line-height: 1.43;
         padding-right: 10px;
         letter-spacing: 0.1px;
+        @include lg {
+            font-size: 1.4rem;
+        }
+        @include sp {
+            font-size: 1rem;
+            padding-right: 5px;
+            letter-spacing: -0.5px;
+            line-height: 1.29;
+        }
     }
 }

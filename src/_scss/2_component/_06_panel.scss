@@ -1,8 +1,24 @@
 .c-panel {
     margin-top: 119px;
+    max-width: 1300px;
+    margin: 119px auto;
+    padding: 0 54px;
+    @include sp {
+        padding: 0 28px;
+        margin-top: 130px;
+        margin-bottom: 0;
+    }
 
     .c-panel__cap,
     .c-panel__title {
         display: none;
     }
 }
+
+// .c-panel--top {
+//     transform: translateX(4px);
+// }
+
+// .c-panel--bot {
+//     transform: translateX(4px);
+// }

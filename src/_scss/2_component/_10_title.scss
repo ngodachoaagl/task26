@@ -1,7 +1,10 @@
 .c-title {
-    font-family: "Oswald";
+    font-family: $Oswald-Light;
     font-weight: 300;
     font-size: 4.8rem;
     color: #000;
     letter-spacing: 4.5px;
+    @include lg {
+        font-size: 4rem;
+    }
 }

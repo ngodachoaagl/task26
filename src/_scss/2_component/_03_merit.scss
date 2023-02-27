@@ -1,118 +1,269 @@
 .c-merit {
     margin-top: 76px;
+    @include sp {
+        margin-top: 48px;
+    }
 }
 
 .c-merit__title {
     text-align: center;
-    font-family: $notoSans;
+    font-family: $San-Reg;
     font-weight: 400;
     font-size: 3.6rem;
-  
+    color: #000;
     margin-bottom: 52px;
+    @include tab {
+        font-size: 3rem;
+    }
+    @include sp {
+        font-size: 1.5rem;
+        margin-bottom: 26px;
+    }
 }
 
 .c-merit__header {
     .c-merit__case {
         justify-content: center;
+        @include sp {
+            flex-direction: column;
+            padding: 0 16px 0 31px;
+        }
     }
 
     .c-box .c-box__item {
-        width: calc(33.33% - 57px);
-    
+        width: calc(33.33% - 60px);
+        @include sp {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .c-box__item:not(:last-of-type) {
         margin-right: 57px;
+        @include sp {
+            margin-bottom: 41px;
+        }
     }
 
-    .c-merit__caseImg {
-        margin-left: 31px;
+    .c-merit__caseNum {
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: #ededed;
+        font-size: 21.4rem;
+        line-height: 0.7;
+        margin-top: 6px;
+        padding-left: 41px;
+        @include lg {
+            font-size: 18.4rem;
+        }
+        @include tab {
+            font-size: 15.4rem;
+            padding-left: 21px;
+        }
+        @include sp {
+            font-size: 14.8rem;
+            padding-left: 15px;
+        }
     }
 }
 
 .c-merit__body {
-    max-width: 1250px;
-    padding-left: 23px;
+    max-width: 1300px;
+    padding: 0 25px;
+
     margin-top: 120px;
     text-align: center;
-   
+    @include sp {
+        margin-top: 85px;
+        padding: 0 43px;
+        max-width: 640px;
+    }
 
     .c-merit__bodyTitle {
-        font-family: $notoSans;
+        font-family: $San-Reg;
         font-size: 3.4rem;
         font-weight: 400;
 
         span {
             color: #252a6d;
             font-size: 4.6rem;
-            font-family: $notoSerif;
+
+            font-family: $Serif-Regular;
+            @include tab {
+                font-size: 3.2rem;
+            }
+            @include sp {
+                font-size: 1.7rem;
+            }
+        }
+        @include tab {
+            font-size: 2.4rem;
+        }
+        @include sp {
+            font-size: 1.3rem;
+            line-height: 1.33;
         }
     }
 
     .c-merit__bodyCap {
-      
         margin-top: 17px;
 
         margin-bottom: 75px;
+        @include tab {
+            font-size: 4rem;
+        }
+        @include sp {
+            font-size: 1.1rem;
+            letter-spacing: 1.35px;
+            margin-top: 8px;
+            margin-bottom: 45px;
+        }
     }
 
     .c-box {
         margin-bottom: 96px;
+        @include tab {
+            margin-bottom: 64px;
+        }
+        @include sp {
+            margin-bottom: 60px;
+            flex-direction: column;
+        }
 
         .c-box__text {
             margin-top: -29px;
             text-align: left;
-            width: 54%;
+            width: 50.1%;
+            @include sp {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+
+        .c-box__logo {
+            @include sp {
+                width: 45px;
+                text-align: left;
+            }
         }
 
         .c-box__title,
         .c-box__desc {
             padding-left: 4.3vw;
-            padding-right: 3.8vw;
+            padding-right: 1.5vw;
         }
 
         .c-box__title {
             font-size: 2.8rem;
-            font-family: $notoSans;
+
+            font-family: $San-Bold;
             font-weight: bold;
             margin-top: 5px;
             margin-bottom: 23px;
+            @include tab {
+                font-size: 2.4rem;
+            }
+            @include sp {
+                font-size: 1.4rem;
+                padding-left: 0;
+                padding-right: 0;
+                margin-top: 3px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
 
             span {
                 font-size: 3.6rem;
                 color: #252a6d;
+                @include tab {
+                    font-size: 3rem;
+                }
+                @include sp {
+                    font-size: 1.8rem;
+                }
             }
         }
 
         .c-box__desc {
-            font-family: $notoSans;
+            font-family: $San-Reg;
             font-size: 2.1rem;
             letter-spacing: 0.6px;
             line-height: 1.6;
+            @include tab {
+                font-size: 1.7rem;
+            }
+            @include sp {
+                font-size: 1rem;
+                padding-right: 0;
+                padding-left: 40px;
+                line-height: 1.7;
+                letter-spacing: 0.8px;
+            }
         }
 
         .c-box__img {
-            width: 44%;
-         
+            width: 49%;
+            @include sp {
+                width: 100%;
+            }
+        }
+        
+        @include sp {
+            &:not(:first-of-type) {
+                .c-box__text {
+                    transform: translateX(-5px);
+                }
+               
+            }
         }
     }
 }
 
 .c-box__rowRev {
     flex-direction: row-reverse !important;
+    @include sp {
+        flex-direction: column !important;
+    }
 
     .c-box__img {
         text-align: left;
-        width: 56.7% !important;
-      
-        
+        width: 48.9% !important;
+        margin-right: 20px;
+        @include sp {
+            width: 100% !important;
+            margin-right: unset;
+            text-align: center;
+        }
     }
 
     .c-box__text {
         .c-box__title,
         .c-box__desc {
-            padding-right: unset;
+            padding-right: 1.2vw;
+            @include sp {
+                padding-right: 0;
+            }
+        }
+    }
+}
+@include sp {
+    .c-merit__alignR {
+        align-items: end;
 
+        .c-merit__caseNum {
+            font-size: 14.8rem;
+            padding-right: 7px;
+        }
+
+        .u-speech__cap {
+            right: unset;
+            left: -1.6%;
+        }
+
+        .u-speech__bubble::after {
+            transform: rotate3d(1, 1, 1, 52deg);
+            left: 70.1%;
         }
     }
 }
