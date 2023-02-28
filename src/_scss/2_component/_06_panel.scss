@@ -19,6 +19,10 @@
 //     transform: translateX(4px);
 // }
 
-// .c-panel--bot {
-//     transform: translateX(4px);
-// }
+.c-panel--bot {
+    margin-bottom: 20px;
+    @include sp {
+        margin-top: 60px;
+    }
+ 
+}

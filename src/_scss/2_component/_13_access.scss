@@ -5,6 +5,26 @@
     @include tab {
         height: 600px;
     }
+    @include sp {
+        height: unset;
+        flex-wrap: wrap;
+        margin-top: 58px;
+    }
+
+    .c-access__map {
+        @include sp {
+            height: 290px;
+            width: 100%;
+        }
+    }
+
+    .c-access__content {
+        @include sp {
+            height: 290px;
+            width: 100%;
+            background-color: #ededed;
+        }
+    }
 
     iframe {
         width: 100%;
@@ -29,6 +49,10 @@
         @include lg {
             left: 55%;
         }
+        @include sp {
+            top: 47.5%;
+            left: 52.5%;
+        }
     }
 
     .c-access__title {
@@ -48,6 +72,11 @@
         @include tab {
             font-size: 3.6rem;
         }
+        @include sp {
+            font-size: 2.4rem;
+            margin-bottom: 5px;
+            letter-spacing: 2.25px;
+        }
     }
 
     .c-access__cap {
@@ -57,11 +86,17 @@
         @include tab {
             font-size: 2.2rem;
         }
+        @include sp {
+            font-size: 1.4rem;
+        }
     }
 
     .c-access__body {
         margin-top: 87px;
         width: 100%;
+        @include sp {
+            margin-top: 43px;
+        }
     }
 
     .c-access__item {
@@ -73,17 +108,28 @@
         @include tab {
             font-size: 1.8rem;
         }
+        @include sp {
+            font-size: 1.2rem;
+            margin-bottom: 7px;
+            transform: translateX(0);
+        }
 
         .c-access__desc {
             min-width: 280px;
             @include tab {
                 min-width: 220px;
             }
+            @include sp {
+                min-width: 200px;
+            }
         }
 
         &:not(:first-of-type) {
             .c-access__desc {
                 transform: translateY(3px);
+                @include sp {
+                    transform: translateY(0);
+                }
             }
         }
 
@@ -104,6 +150,12 @@
                         white-space: normal;
                         bottom: -41px;
                     }
+                    @include sp {
+                        font-size: 0.8rem;
+                        bottom: -17px;
+                        left: -7px;
+                        white-space: nowrap;
+                    }
                 }
             }
         }
@@ -120,7 +172,13 @@
             @include tab {
                 min-width: 100px;
                 height: 40px;
-                
+            }
+            @include sp {
+                min-width: 60px;
+                width: 60px;
+                height: 23px;
+                margin-right: 12px;
+                line-height: 0.8;
             }
         }
     }

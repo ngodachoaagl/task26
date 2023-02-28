@@ -36,15 +36,15 @@ body {
 }
 //-------------------------------------------------------
 .sp--only {
-    display: none;
+    display: none !important;
     @include sp {
-        display: block;
+        display: block !important;
     }
 }
 
 .pc--only {
     display: block;
     @include sp {
-        display: none;
+        display: none !important;
     }
 }

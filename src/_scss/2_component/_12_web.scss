@@ -1,6 +1,10 @@
 .c-web {
     margin-top: 65px;
     padding: 0 45px;
+    @include sp {
+        margin-top: 42px;
+        padding: 0 19px 0 21px;
+    }
 
     .c-web__header {
         color: #231815;
@@ -15,12 +19,20 @@
         font-weight: 400;
         letter-spacing: -0.8px;
         margin-bottom: 27px;
+        @include sp {
+            font-size: 1.7rem;
+            transform: translateX(0);
+            margin-bottom: 14px;
+        }
 
         span {
             font-family: $Serif-Regular;
             font-size: 4.6rem;
             color: #252a6d;
             letter-spacing: 12.5px;
+            @include sp {
+                font-size: 2.3rem;
+            }
         }
     }
 
@@ -29,6 +41,10 @@
         font-size: 2.7rem;
         line-height: 1.4;
         transform: translateX(26px);
+        @include sp {
+            font-size: 1.3rem;
+            transform: translateX(0);
+        }
     }
 
     .c-web__body {
@@ -38,6 +54,11 @@
         display: flex;
         @include lg {
             transform: translateX(0);
+        }
+        @include sp {
+            flex-wrap: wrap;
+            margin-top: 36px;
+            max-width: 335px;
         }
     }
 
@@ -55,32 +76,55 @@
             padding: 1% 1.2%;
             flex-grow: 1;
         }
-      
+        @include sp {
+            width: calc(50% - 26px);
+            flex-grow: 0;
+            margin-bottom: 24px;
+            padding: 21px 10px 24px;
+        }
+
         &:first-of-type {
             transform: translateX(1.6px);
+            @include sp {
+                transform: translate(0);
+            }
         }
 
         &:not(:last-of-type) {
             margin-right: 3.72%;
+            @include sp {
+                margin-right: 0;
+            }
         }
 
-        &:not(:first-of-type) {
-            ::before {
+        &:not(:last-of-type) {
+            ::after {
                 content: "";
                 position: absolute;
                 width: 0;
                 height: 0;
-                left: -13%;
+                right: -12%;
                 top: 48%;
                 border-top: 8px solid transparent;
                 border-bottom: 8px solid transparent;
                 border-left: 8px solid #000;
+                @include sp {
+                    border-top: 4px solid transparent;
+                    border-bottom: 4px solid transparent;
+                    border-left: 4px solid #000;
+                }
             }
         }
 
-        &:nth-of-type(2) {
-            ::before {
-                left: -12%;
+        &:nth-of-type(2n) {
+            @include sp {
+                margin-left: 34px;
+            }
+        }
+
+        &:first-of-type {
+            ::after {
+                right: -13%;
             }
         }
     }
@@ -93,6 +137,10 @@
         @include tab {
             width: 27px;
         }
+        @include sp {
+            width: 23px;
+            margin-bottom: 9px;
+        }
     }
 
     .c-web__Bcap {
@@ -100,7 +148,7 @@
         font-weight: 400;
         margin-bottom: 11px;
 
-        &::before {
+        &::after {
             content: none !important;
         }
         @include lg {
@@ -109,7 +157,10 @@
         @include tab {
             font-size: 1.2rem;
         }
-        
+        @include sp {
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
     }
 
     .c-web__Bdesc {
@@ -123,8 +174,12 @@
         @include tab {
             font-size: 1rem;
         }
+        @include sp {
+            font-size: 0.8rem;
+            padding-top: 7px;
+        }
 
-        &::before {
+        &::after {
             content: none !important;
         }
     }
@@ -136,10 +191,16 @@
     .c-box__itemDeve {
         .c-web__Bicon {
             transform: translateX(-2px);
+            @include sp {
+                transform: translateX(0);
+            }
         }
 
         .c-web__Bcap {
             transform: translate(-11px, -1px);
+            @include sp {
+                transform: translate(-6px);
+            }
         }
 
         .c-web__Bdesc {
@@ -207,6 +268,12 @@
         padding: 0 2px;
         margin-top: 123px;
         transform: translateX(2px);
+        @include sp {
+            padding: 0 1px;
+            margin-top: 40px;
+            max-width: 500px;
+            transform: translateX(0);
+        }
     }
 
     .c-web__banner {
@@ -219,6 +286,10 @@
         }
         @include tab {
             padding: 30px 3.8%;
+        }
+        @include sp {
+            text-align: center;
+            padding: 29px 3.8% 34px;
         }
     }
 
@@ -234,11 +305,18 @@
         @include lg {
             font-size: 1.9rem;
         }
+        @include sp {
+            font-size: 1.1rem;
+            border-radius: 12px;
+            padding: 5px 15px;
+            margin-left: 0;
+        }
     }
 
     .c-web__bannerTitle {
         display: inline-block;
         font-size: 3.2rem;
+        font-family: $San-Light;
         font-weight: 300;
         transform: translateY(5px);
         letter-spacing: 1.2px;
@@ -246,6 +324,14 @@
         @include lg {
             font-size: 2.6rem;
             margin-left: 25px;
+        }
+        @include sp {
+            font-size: 1.6rem;
+            margin-top: 6px;
+            margin-left: 0;
+            line-height: 1.1;
+            letter-spacing: 0.5px;
+            display: block;
         }
     }
 
@@ -255,8 +341,16 @@
         font-weight: 300;
         margin-left: 19px;
         letter-spacing: 0.4px;
+        font-family: $San-Light;
         @include lg {
             font-size: 1.8rem;
+        }
+        @include sp {
+            font-size: 1rem;
+            margin-left: 0;
+            margin-top: 13px;
+            letter-spacing: 0.1px;
+            line-height: 1.64;
         }
     }
 
@@ -277,7 +371,7 @@
         }
     }
 
-    .c-box__item {  
+    .c-box__item {
         width: 20%;
         text-align: center;
 
@@ -372,6 +466,107 @@
 
             .c-box__desc {
                 transform: translateX(4px);
+            }
+        }
+    }
+
+    .sp--only {
+        .c-web__collect {
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 38px 20px 39px;
+        }
+
+        .c-box {
+            width: 50%;
+            flex-direction: column;
+            border-bottom: none;
+
+            &:first-of-type {
+                border-right: 1px solid #aeaeae;
+            }
+        }
+
+        .c-box__item {
+            width: 100%;
+            border: none;
+            padding: 8px 10px;
+            text-align: center;
+
+            &:not(:last-of-type) {
+                border-bottom: 1px solid #aeaeae;
+            }
+
+            &:first-of-type {
+                height: 126px;
+            }
+
+            &:nth-of-type(2) {
+                height: 141px;
+                padding: 11px 10px 8px;
+            }
+
+            &:nth-of-type(3) {
+                height: 138px;
+                padding: 16px 10px 8px;
+            }
+
+            &:nth-of-type(4) {
+                height: 137px;
+                padding: 7px 10px 8px;
+
+                .c-box__img {
+                    margin-bottom: -2px;
+                }
+            }
+
+            &:nth-of-type(5) {
+                height: 152px;
+            }
+
+            .c-box__img {
+                width: 94px;
+                margin-bottom: 3px;
+            }
+
+            .c-box__desc {
+                transform: translate(0);
+                font-size: 0.9rem;
+                letter-spacing: -0.5px;
+            }
+        }
+
+        .c-box__row--1 {
+            width: 312px;
+
+            .c-box__temp {
+                .c-box__img {
+                    margin-bottom: 8px;
+                }
+
+                .c-box__desc {
+                }
+            }
+        }
+
+        .c-box__row--2 {
+            width: 268px;
+
+            .c-box__item {
+                img {
+                    transform: translateX(0);
+                }
+            }
+
+            .c-box__zoom {
+                padding: 24px 10px 8px;
+
+                .c-box__img {
+                    margin-bottom: -1px;
+                }
+
+                .c-box__desc {
+                }
             }
         }
     }

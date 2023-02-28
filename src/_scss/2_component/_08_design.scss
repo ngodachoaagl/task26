@@ -32,7 +32,7 @@
         & > * {
             flex-shrink: 1;
         }
-        @include sp{
+        @include sp {
             margin-top: 50px;
             padding-left: 32px;
             padding-right: 13px;
@@ -43,9 +43,9 @@
         width: 42%;
         margin-right: 4.8%;
         flex-grow: 1;
-        @include sp{
+        @include sp {
             width: 100%;
-             margin-right: unset;
+            margin-right: unset;
         }
     }
 
@@ -59,7 +59,7 @@
             font-size: 4rem;
             margin-bottom: 10px;
         }
-        @include sp{
+        @include sp {
             font-size: 2.4rem;
             letter-spacing: 2.25px;
         }
@@ -91,10 +91,10 @@
         @include tab {
             font-size: 2rem;
         }
-        @include sp{
-           margin-top: 8.5%;
-             font-size: 1.3rem;
-             letter-spacing: 0.5px;
+        @include sp {
+            margin-top: 8.5%;
+            font-size: 1.3rem;
+            letter-spacing: 0.5px;
         }
     }
 
@@ -110,9 +110,9 @@
         @include tab {
             font-size: 1.4rem;
         }
-         @include sp{
+        @include sp {
         
-             font-size: 1rem;
+            font-size: 1rem;
            
         }
     }
@@ -121,11 +121,12 @@
         padding-top: 7.6%;
         width: 46%;
         flex-grow: 1;
-@include sp{
-    width: 100%;
-    margin-top: 23px;
-    padding-left: 5px;
-}
+        @include sp {
+            width: 100%;
+            margin-top: 23px;
+            padding-left: 5px;
+        }
+
         iframe {
             width: 100%;
             max-width: 702px;
@@ -138,7 +139,7 @@
                 width: 100%;
            
             }
-            @include sp{
+            @include sp {
                 max-width: 302px;
                 height: 168px;
                 

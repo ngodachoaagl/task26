@@ -27,14 +27,12 @@
       {
         "caseNum": "01",
         "caseMess": "子育てにはどんな家が良いんだろう？"
-       
       },
       {
         "caseNum": "02",
         "caseMess": "理想の家って実現できるの？",
         "caseCaption": "いろいろとこだわった",
         "alignRight": true
-
       },
       {
         "caseNum": "03",
@@ -137,7 +135,7 @@
             "iconIMG": "/assets/img/web/window.png",
             "alt": "常時店内・モデルハウス換気中",
             "desc": "常時店内・モデルハウス<br>換気中",
-          "name":"window"
+            "name": "window"
           },
           {
             "iconIMG": "/assets/img/web/mask.png",
@@ -161,7 +159,7 @@
             "iconIMG": "/assets/img/web/temp.png",
             "alt": "発熱のあるスタッフ・お客様の出社・入店禁止",
             "desc": "発熱のあるスタッフ・<br>お客様の出社・入店禁止",
-              "name": "temp"
+            "name": "temp"
           }
         ]
       },
@@ -172,7 +170,7 @@
             "iconIMG": "/assets/img/web/star.png",
             "alt": "こまめな除菌",
             "desc": "こまめな除菌",
-              "name": "star"
+            "name": "star"
           },
           {
             "iconIMG": "/assets/img/web/speak.png",
@@ -190,7 +188,79 @@
             "iconIMG": "/assets/img/web/meeting.png",
             "alt": "web設計打合せを推奨しています",
             "desc": "web設計打合せを<br>推奨しています",
-              "name": "meeting"
+            "name": "meeting"
+          },
+          {
+            "iconIMG": "/assets/img/web/zoom.png",
+            "alt": "webおうち相談会を推奨しています",
+            "desc": "webおうち相談会を<br>推奨しています",
+            "name": "zoom"
+          }
+        ]
+      }
+    ],
+    "footerSP": [
+      {
+        "name": "c-box__row--1",
+        "main": [
+          {
+            "iconIMG": "/assets/img/web/window.png",
+            "alt": "常時店内・モデルハウス換気中",
+            "desc": "常時店内・モデルハウス<br>換気中",
+            "name": "window"
+          },
+          {
+            "iconIMG": "/assets/img/web/star.png",
+            "alt": "こまめな除菌",
+            "desc": "こまめな除菌",
+            "name": "star"
+          },
+          {
+            "iconIMG": "/assets/img/web/ppmask.png",
+            "alt": "お客様へのマスク着用をお願いしています",
+            "desc": "お客様へのマスク着用<br>をお願いしています",
+            "name": "ppmask"
+          },
+          {
+            "iconIMG": "/assets/img/web/wash.png",
+            "alt": "スタッフ・お客様アルコール除菌",
+            "desc": "スタッフ・お客様<br>アルコール除菌",
+            "name": "wask"
+          },
+          {
+            "iconIMG": "/assets/img/web/temp.png",
+            "alt": "発熱のあるスタッフ・お客様の出社・入店禁止",
+            "desc": "発熱のあるスタッフ・<br>お客様の出社・入店禁止",
+            "name": "temp"
+          }
+        ]
+      },
+      {
+        "name": "c-box__row--2",
+        "main": [
+          {
+            "iconIMG": "/assets/img/web/mask.png",
+            "alt": "スタッフのマスク着用義務化",
+            "desc": "スタッフの<br>マスク着用義務化",
+            "name": "mask"
+          },
+          {
+            "iconIMG": "/assets/img/web/speak.png",
+            "alt": "咳エチケットを徹底しています",
+            "desc": "咳エチケットを<br>徹底しています",
+            "name": "speak"
+          },
+          {
+            "iconIMG": "/assets/img/web/keep.png",
+            "alt": "スタッフのマスク着用義務化",
+            "desc": "ソーシャルディスタンス<br>（2m）を維持した打合せ",
+            "name": "keep"
+          },
+          {
+            "iconIMG": "/assets/img/web/meeting.png",
+            "alt": "web設計打合せを推奨しています",
+            "desc": "web設計打合せを<br>推奨しています",
+            "name": "meeting"
           },
           {
             "iconIMG": "/assets/img/web/zoom.png",

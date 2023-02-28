@@ -1,14 +1,31 @@
 .c-contact {
-    max-width: 1197px;
-    margin: 92px auto 0;
-    height: 285px;
-    border: 1px solid #000;
-    display: flex;
+    padding: 0 28px;
+
+ 
+    margin-top: 92px;
+  @include sp{
+    margin-top: 0;
+    
+  }
+   
+    .c-contact__main {
+         display: flex;
     justify-content: center;
     align-items: center;
     transform: translate(1px, -1px);
-
+           height: 285px;
+        max-width: 1197px;
+        margin: 0 auto;
+          border: 1px solid #000;
+          @include sp{
+            height:111px ;
+          }
+    }
     .c-contact__title {
         transform: translate(-3px, 2px);
+        @include sp{
+            font-size: 2.4rem;
+            letter-spacing: 2.25px;
+        }
     }
 }

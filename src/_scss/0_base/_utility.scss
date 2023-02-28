@@ -100,11 +100,19 @@
     height: 44px;
     background-color: #231815;
     color: #fff;
+    @include sp {
+        width: 26px;
+        height: 26px;
+    }
 
     span {
         font-family: $San-Reg;
         font-size: 1.5rem;
         line-height: 44px;
+        @include sp {
+            font-size: 0.9rem;
+            line-height: 26px;
+        }
     }
 }
 

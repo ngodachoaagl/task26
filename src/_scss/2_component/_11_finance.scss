@@ -1,20 +1,27 @@
 .c-finance {
     margin-top: 92.1px;
     background-color: #ededed;
-    padding: 93px 40px  64px;
+    padding: 93px 40px 64px;
+    @include sp {
+        margin-top: 69px;
+        padding: 35px 0 64px;
+    }
 
     .c-finance__header {
         display: flex;
         flex-direction: column;
- 
+
         align-items: center;
     }
 
     .c-finance__title {
- 
         position: relative;
         display: inline-block;
         padding-bottom: 25px;
+        @include sp {
+            font-size: 2.4rem;
+            letter-spacing: 2.25px;
+        }
 
         &::after {
             content: "";
@@ -37,53 +44,106 @@
         letter-spacing: 1px;
         background-color: #231815;
         transform: translateX(17px);
+        @include sp {
+            margin-top: 17px;
+            font-size: 1.5rem;
+            padding: 3px 25px 7px;
+            transform: translateX(0);
+        }
     }
 
     .c-finance__main {
-  
         max-width: 1280px;
         margin: 45px auto;
         display: flex;
-        padding: 0 2px 0 3px;
+        padding: 0 25px;
+
+        @include sp {
+            flex-wrap: wrap;
+            margin: 22px auto;
+            align-items: center;
+            flex-direction: column;
+        }
     }
 
     .c-finance__panel {
         width: 47.5%;
-        
+        height: 433px;
         background-color: #fff;
+        @include tab {
+            height: 320px;
+        }
+        @include sp {
+            width: 100%;
+            max-width: 302px;
+            height: 217px;
+            margin-bottom: 27px;
+        }
     }
 
     .c-finance__panel--l {
         margin-right: 5%;
-        padding: 9% 6% 6.1% 6.7%;
+
+        position: relative;
         @include lg {
             padding-left: 5.3%;
         }
+        @include sp {
+            margin-right: 0;
+        }
 
-        .c-finance__desc {      
+        .c-finance__content {
+            position: absolute;
+            top: 54%;
+            left: 48%;
+            transform: translate(-49.3%, -49.5%);
+            @include sp {
+                top: 56%;
+                left: 47.6%;
+            }
+        }
+
+        .c-finance__desc {
             font-family: $San-Reg;
             font-size: 2.2rem;
             color: #231815;
             letter-spacing: -0.2px;
             transform: translateY(-8px);
+            white-space: nowrap;
             @include lg {
                 font-size: 1.8rem;
             }
             @include tab {
-                font-size: 1.6rem;
+                font-size: 1.4rem;
+            }
+            @include sp {
+                font-size: 1.1rem;
             }
 
             &:not(:last-of-type) {
                 margin-bottom: 36px;
+                @include sp {
+                    margin-bottom: 18px;
+                }
             }
-
         }
     }
 
     .c-finance__panel--r {
         position: relative;
-        padding: 8.1% 6% 6.1% 6.8%;
+
         font-family: $San-Reg;
+
+        .c-finance__content {
+            position: absolute;
+            top: 49%;
+            left: 45.8%;
+            transform: translate(-49.3%, -49.7%);
+            white-space: nowrap;
+            @include sp {
+                top: 49.3%;;
+            }
+        }
 
         .c-finance__icon {
             position: absolute;
@@ -92,6 +152,13 @@
             width: 33.9%;
             @include tab {
                 width: 27%;
+            }
+            @include sp {
+                width: 34%;
+                
+                top: -4.1%;
+                right: -7%;
+
             }
         }
 
@@ -103,6 +170,10 @@
             @include tab {
                 font-size: 2.2rem;
             }
+            @include sp {
+                font-size: 1.3rem;
+                padding-left: 0;
+            }
         }
 
         .c-finance__price {
@@ -112,11 +183,17 @@
             @include tab {
                 font-size: 6rem;
             }
+            @include sp {
+                font-size: 4.5rem;
+            }
 
             span {
                 font-size: 3.6rem;
                 @include tab {
                     font-size: 2.4rem;
+                }
+                @include sp {
+                    font-size: 1.8rem;
                 }
             }
         }
@@ -130,7 +207,10 @@
             @include tab {
                 font-size: 1.6rem;
             }
+            @include sp {
+                font-size: 1.1rem;
+                margin-top: 8px;
+            }
         }
     }
 }
-
