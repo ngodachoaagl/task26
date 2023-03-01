@@ -11,8 +11,8 @@
         <img class="c-mainvisual__img" src="/assets/img/mainvisual/banner.jpg" alt="COCO MGM DESIGN">
         <div class="c-mainvisual__text">
           <a href="#"> <img class="c-mainvisual__logo" src="/assets/img/mainvisual/logo.png" alt="COCO MGM DESIGN"></a>
-          <h1 class="c-mainvisual__title">COCO MGM DESIGN</h1>
-          <h2 class="c-mainvisual__desc">「こんな家に住みたい」をカタチにした家</h2>
+
+          <h1 class="c-mainvisual__desc">「こんな家に住みたい」をカタチにした家</h1>
           <img class="c-mainvisual__cap" src="/assets/img/mainvisual/caption.png" alt="COCO MGM DESIGN">
         </div>
       </div>
@@ -29,12 +29,12 @@
                 <h2 class="c-merit__caseNum">
                   <%= item.caseNum %>
                 </h2>
-                <div class="u-speech__bubble">
-                  <p class="u-speech__mess">
+                <div class="c-speech__bubble">
+                  <p class="c-speech__mess">
                     <%= item.caseMess %>
                   </p>
                   <% if(typeof item.caseCaption !='undefined' ) {%>
-                    <span class="u-speech__cap">
+                    <span class="c-speech__cap">
                       <%=item.caseCaption%>
                     </span>
                     <% }%>
@@ -55,6 +55,7 @@
               <div class="c-box__item c-box__text">
 
                 <img class="c-box__logo" src="<%= item.logoImg %>" alt="<%= item.imgAlt %>">
+                <br>
                 <h3 class="c-box__title"><%- item.title %></h3>
                 <p class="c-box__desc"><%- item.desc %></p>
 
@@ -76,7 +77,7 @@
     <section class="c-rePoint l-container--1740">
       <div class="c-rePoint__header">
         <div class="c-rePoint__headerImg">
-          <img src="/assets/img/RePoint/1x/Headerlogo.png" alt="">
+          <img src="/assets/img/RePoint/1x/headerLogo.png" alt="RECOMMENDED POINT">
 
         </div>
         <div class="c-rePoint__headerText">
@@ -89,6 +90,7 @@
           <% if(typeof rePoint !='undefined' ){%>
             <% rePoint.bodyContent.forEach(item=>{%>
               <a href="#" class="c-box__item">
+                <div class="c-box__main">
                 <img class="c-box__img" src="<%= item.imgUrl %>" alt="<%= item.boxTitle %>">
                 <h3 class="c-box__title">
                   <%= item.boxTitle %>
@@ -96,6 +98,7 @@
                 <p class="c-box__desc"><%- item.boxDesc %>
 
                 </p>
+                </div>
               </a>
               <% })%>
                 <% }%>
@@ -121,38 +124,33 @@
 
     </section>
     <section class="c-design">
-      <div class="c-silder">
+      <div class="c-slider">
         <div class="slideshow-container">
 
 
           <div class="mySlides fade">
             <picture>
               <source media="(max-width:767px)" srcset="/assets/img/Slider/1x/slider1SP.png">
-              <img src="/assets/img/Slider/1x/slider1.png">
+              <img src="/assets/img/Slider/1x/slider1.png" alt="slider">
             </picture>
           </div>
 
           <div class="mySlides fade">
 
             <picture>
-              <source media="(max-width:767px)" srcset="/assets/img/Slider/1x/slider1SP.png">
-              <img src="/assets/img/Slider/1x/slider1.png">
+              <source media="(max-width:767px)" srcset="/assets/img/Slider/1x/slider2SP.png">
+              <img src="/assets/img/Slider/1x/slider2.png" alt="slider">
             </picture>
 
           </div>
 
-          <div class="mySlides fade">
+         
 
-            <picture>
-              <source media="(max-width:767px)" srcset="/assets/img/Slider/1x/slider1SP.png">
-              <img src="/assets/img/Slider/1x/slider1.png">
-            </picture>
-
-          </div>
-
-
-          <a class="prev" onclick="plusSlides(-1)"><img src="/assets/img/Slider/1x/btnPre.png" alt=""></a>
-          <a class="next" onclick="plusSlides(1)"><img src="/assets/img/Slider/1x/btnNext.png" alt=""></a>
+<div class="c-slider--btn">
+    <a class="prev" onclick="plusSlides(-1)"><img src="/assets/img/Slider/1x/btnPre.png" alt="pre"></a>
+    <a class="next" onclick="plusSlides(1)"><img src="/assets/img/Slider/1x/btnNext.png" alt="next"></a>
+</div>
+        
         </div>
 
       </div>
@@ -172,7 +170,7 @@
               年齢や性別を意識しない誰にでも愛される空間です。</p>
           </div>
           <div class="c-design__iframe">
-            <iframe src="https://www.youtube.com/embed/GtH-3_jjTvQ" title="YouTube video player" frameborder="0"
+            <iframe src="https://www.youtube.com/embed/GtH-3_jjTvQ" title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </div>
@@ -355,7 +353,7 @@
           <div class="c-access__body">
             <div class="c-access__item">
               <a class="c-access__tag" href="#">開催日</a>
-              <p class="c-access__desc">8月20日（土）・21日（日）</p>
+              <p class="c-access__desc">8&nbsp;月&nbsp;20&nbsp;日（土）・21&nbsp;日（日）</p>
             </div>
             <div class="c-access__item">
               <a class="c-access__tag" href="#">時間</a>
@@ -379,14 +377,14 @@
         <picture>
           <source media="(max-width:767px)" srcset="/assets/img/RePoint/1x/panelSP.png">
 
-          <img src="/assets/img/RePoint/1x/panel-top.png" alt="絶対オトク！1,000円分のQUOカードプレゼント">
+          <img src="/assets/img/RePoint/1x/panel.png" alt="絶対オトク！1,000円分のQUOカードプレゼント">
         </picture>
 
       </a>
 
     </section>
 <section class="c-contact">
-  <div class="c-contact__main"><h2 class="c-contact__title c-title">CONTACT FORM</h2></div>
+  <a href="#" class="c-contact__main"><h2 class="c-contact__title c-title">CONTACT FORM</h2></a>
  
 </section>
 

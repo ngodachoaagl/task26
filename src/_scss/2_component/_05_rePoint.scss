@@ -1,5 +1,5 @@
 .c-rePoint {
-    margin-top: 167px;
+    margin-top: 177px;
     background-color: #ededed;
     height: 755px;
     position: relative;
@@ -13,9 +13,10 @@
         height: 590px;
     }
     @include sp {
-        margin-top: 73px;
+        margin-top: 82px;
         padding: 75px 12px 40px;
         height: unset;
+       
     }
 }
 
@@ -36,9 +37,8 @@
             width: 215px;
             top: 95%;
             left: unset;
-            // left: 43.8%;
+
             right: 0;
-          
         }
     }
 
@@ -47,7 +47,7 @@
         top: -11%;
         right: 2.6%;
         @include sp {
-            top: -4.1%;
+            top: -3.8%;
             right: 3.3%;
         }
     }
@@ -75,7 +75,7 @@
 
     .c-rePoint__headerTitle {
         text-align: right;
-        font-family: $San-Reg;
+
         font-weight: 400;
         font-size: 3.4rem;
         letter-spacing: -0.3px;
@@ -91,7 +91,7 @@
         }
 
         span {
-            font-family: $Serif-Regular;
+            font-family: $notoSerif;
             font-size: 4.6rem;
             color: #252a6d;
             @include lg {
@@ -113,7 +113,7 @@
 
     .c-box__item {
         background-color: #fff;
-        padding: 23px 20px 45.5px;
+        padding: 23px 0;
 
         &:not(:last-of-type) {
             margin-right: 25px;
@@ -143,14 +143,28 @@
                 margin-left: 10px;
             }
         }
+      
         @include lg {
-            padding: 15px 15px 20px;
+            padding: 15px 0;
         }
         @include sp {
             width: calc(50% - 10px);
             flex-grow: 1;
             padding: 10px 10px 16px;
             margin-bottom: 16px;
+        }
+    }
+
+    .c-box__main {
+        padding: 0 20px 22px;
+        max-height: 520px;
+        overflow-y: auto;
+        @include lg {
+            padding: 0 15px 10px;
+            max-height: 400px;
+        }
+        @include sp {
+            padding: 0;
         }
     }
 
@@ -163,9 +177,9 @@
 
     .c-box__title {
         margin-bottom: 13px;
-        font-family: $San-Reg;
-        font-weight: 400;
+
         font-size: 2.3rem;
+        font-weight: 400;
         @include lg {
             font-size: 1.8rem;
         }
@@ -176,7 +190,6 @@
     }
 
     .c-box__desc {
-        font-family: $San-Light;
         font-weight: 300;
         font-size: 1.9rem;
         line-height: 1.43;

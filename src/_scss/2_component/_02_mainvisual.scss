@@ -60,7 +60,9 @@
     }
 
     .c-mainvisual__desc {
-        font-family: $Serif-Bold;
+        
+        font-family: $notoSerif;
+     
         font-size: 2rem;
         letter-spacing: -2.2px;
         transform: translateX(-12px);

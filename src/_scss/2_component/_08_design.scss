@@ -16,6 +16,12 @@
         right: 0;
         top: -37%;
         background-color: #ededed;
+        @include sp {
+            width: 51.7%;
+            height: 256px;
+            right: 0;
+            top: -20%;
+        }
     }
 
     .c-design__main {
@@ -57,7 +63,7 @@
         }
         @include tab {
             font-size: 4rem;
-            margin-bottom: 10px;
+            margin-bottom: 14px;
         }
         @include sp {
             font-size: 2.4rem;
@@ -76,12 +82,15 @@
             @include tab {
                 top: 0;
             }
+            @include sp {
+                width: 30px;
+            }
         }
     }
 
     .c-design__cap {
         margin-top: 7.5%;
-        font-family: $San-Reg;
+      
         font-size: 2.7rem;
         font-weight: 400;
         line-height: 1.4;
@@ -100,7 +109,7 @@
 
     .c-design__desc {
         margin-top: 5.3%;
-        font-family: $San-Light;
+
         font-size: 1.9rem;
         font-weight: 300;
         line-height: 1.77;

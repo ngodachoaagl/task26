@@ -1,10 +1,10 @@
 .c-finance {
     margin-top: 92.1px;
     background-color: #ededed;
-    padding: 93px 40px 64px;
+    padding: 93px 50px 64px;
     @include sp {
         margin-top: 69px;
-        padding: 35px 0 64px;
+        padding: 35px 0 13px;
     }
 
     .c-finance__header {
@@ -29,15 +29,21 @@
             height: 1%;
             width: 57px;
             bottom: 0;
-            left: 25%;
+            left: 34%;
             background-color: #231815;
+            @include sp {
+                height: 1px;
+                width: 29px;
+                bottom: 18%;
+
+            }
         }
     }
 
     .c-finance__cap {
         padding: 4px 56.1px 17px;
         margin-top: 60px;
-        font-family: $San-Reg;
+     
         font-weight: 400;
         font-size: 3rem;
         color: #fff;
@@ -56,13 +62,15 @@
         max-width: 1280px;
         margin: 45px auto;
         display: flex;
-        padding: 0 25px;
+       
 
         @include sp {
             flex-wrap: wrap;
             margin: 22px auto;
             align-items: center;
             flex-direction: column;
+            padding: 0 25px;
+        
         }
     }
 
@@ -95,7 +103,7 @@
         .c-finance__content {
             position: absolute;
             top: 54%;
-            left: 48%;
+            left: 48.3%;
             transform: translate(-49.3%, -49.5%);
             @include sp {
                 top: 56%;
@@ -104,7 +112,7 @@
         }
 
         .c-finance__desc {
-            font-family: $San-Reg;
+          
             font-size: 2.2rem;
             color: #231815;
             letter-spacing: -0.2px;
@@ -132,7 +140,7 @@
     .c-finance__panel--r {
         position: relative;
 
-        font-family: $San-Reg;
+       
 
         .c-finance__content {
             position: absolute;
@@ -140,8 +148,12 @@
             left: 45.8%;
             transform: translate(-49.3%, -49.7%);
             white-space: nowrap;
+            @include lg {
+                left: 48.8%;
+            }
             @include sp {
-                top: 49.3%;;
+                top: 49.5%;
+                left: 47%;
             }
         }
 
@@ -185,6 +197,7 @@
             }
             @include sp {
                 font-size: 4.5rem;
+                transform: translateX(-4px);
             }
 
             span {
@@ -193,7 +206,9 @@
                     font-size: 2.4rem;
                 }
                 @include sp {
+                    display: inline-block;
                     font-size: 1.8rem;
+                    transform: translate(-2px, 2px);
                 }
             }
         }
@@ -210,6 +225,8 @@
             @include sp {
                 font-size: 1.1rem;
                 margin-top: 8px;
+                letter-spacing: -0.3px;
+                transform: translateX(-4px);
             }
         }
     }

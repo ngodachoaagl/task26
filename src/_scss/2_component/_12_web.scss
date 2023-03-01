@@ -9,28 +9,28 @@
     .c-web__header {
         color: #231815;
         text-align: center;
-
-        font-family: $San-Reg;
     }
 
     .c-web__title {
-        transform: translateX(24px);
+        // transform: translateX(24px);
         font-size: 3.4rem;
         font-weight: 400;
         letter-spacing: -0.8px;
         margin-bottom: 27px;
         @include sp {
             font-size: 1.7rem;
-            transform: translateX(0);
+            transform: translateX(2px);
             margin-bottom: 14px;
+            letter-spacing: -0.4px;
         }
 
         span {
-            font-family: $Serif-Regular;
+            font-family: $notoSerif;
             font-size: 4.6rem;
             color: #252a6d;
             letter-spacing: 12.5px;
             @include sp {
+                letter-spacing: 7px;
                 font-size: 2.3rem;
             }
         }
@@ -40,7 +40,7 @@
         font-weight: 300;
         font-size: 2.7rem;
         line-height: 1.4;
-        transform: translateX(26px);
+        // transform: translateX(26px);
         @include sp {
             font-size: 1.3rem;
             transform: translateX(0);
@@ -48,7 +48,7 @@
     }
 
     .c-web__body {
-        margin-top: 72px;
+        margin-top: 71px;
         transform: translateX(43.2px);
 
         display: flex;
@@ -63,7 +63,6 @@
     }
 
     .c-web__item {
-        font-family: $San-Reg;
         position: relative;
 
         padding: 2.35% 1.2% 2.9%;
@@ -108,6 +107,11 @@
                 border-top: 8px solid transparent;
                 border-bottom: 8px solid transparent;
                 border-left: 8px solid #000;
+                @include tab {
+                    border-top: 6px solid transparent;
+                    border-bottom: 6px solid transparent;
+                    border-left: 6px solid #000;
+                }
                 @include sp {
                     border-top: 4px solid transparent;
                     border-bottom: 4px solid transparent;
@@ -199,22 +203,29 @@
         .c-web__Bcap {
             transform: translate(-11px, -1px);
             @include sp {
-                transform: translate(-6px);
+                transform: translate(-4px);
+                letter-spacing: 0.5px;
             }
         }
 
         .c-web__Bdesc {
             transform: translateX(-5px);
+            @include sp {
+                transform: translateX(-2px);
+            }
         }
     }
 
     .c-box__itemUser {
         .c-web__Bicon {
             transform: translateX(4px);
+            @include sp {
+                transform: translateX(1px);
+            }
         }
 
         .c-web__Bcap {
-            transform: translate(4px, -1px);
+            transform: translate(1px, -1px);
         }
 
         .c-web__Bdesc {
@@ -253,6 +264,11 @@
     .c-box__itemGift {
         .c-web__Bicon {
             transform: translateX(-3px);
+            @include sp {
+                width: 21px;
+                transform: translateX(0);
+                margin-bottom: 12px;
+            }
         }
 
         .c-web__Bcap {
@@ -279,17 +295,17 @@
     .c-web__banner {
         background-color: #231815;
         color: #fff;
-        font-family: $San-Reg;
-        padding: 60px 6.2% 50px;
+
+        padding: 61px 6.2% 49px;
         @include lg {
-            padding: 60px 3.8% 50px;
+            padding: 61px 3.8% 49px;
         }
         @include tab {
+            text-align: center;
             padding: 30px 3.8%;
         }
         @include sp {
-            text-align: center;
-            padding: 29px 3.8% 34px;
+            padding: 28px 3.8% 31px;
         }
     }
 
@@ -308,7 +324,8 @@
         @include sp {
             font-size: 1.1rem;
             border-radius: 12px;
-            padding: 5px 15px;
+            letter-spacing: 0.7px;
+            padding: 5px 13px;
             margin-left: 0;
         }
     }
@@ -316,7 +333,7 @@
     .c-web__bannerTitle {
         display: inline-block;
         font-size: 3.2rem;
-        font-family: $San-Light;
+
         font-weight: 300;
         transform: translateY(5px);
         letter-spacing: 1.2px;
@@ -325,9 +342,12 @@
             font-size: 2.6rem;
             margin-left: 25px;
         }
+        @include tab {
+            margin-top: 10px;
+        }
         @include sp {
             font-size: 1.6rem;
-            margin-top: 6px;
+            margin-top: 7px;
             margin-left: 0;
             line-height: 1.1;
             letter-spacing: 0.5px;
@@ -341,14 +361,14 @@
         font-weight: 300;
         margin-left: 19px;
         letter-spacing: 0.4px;
-        font-family: $San-Light;
+
         @include lg {
             font-size: 1.8rem;
         }
         @include sp {
             font-size: 1rem;
             margin-left: 0;
-            margin-top: 13px;
+            margin-top: 15px;
             letter-spacing: 0.1px;
             line-height: 1.64;
         }
@@ -406,7 +426,6 @@
         }
 
         .c-box__desc {
-            font-family: $San-Reg;
             font-size: 1.5rem;
             color: #231815;
             font-weight: 400;
@@ -474,7 +493,7 @@
         .c-web__collect {
             display: flex;
             flex-wrap: nowrap;
-            padding: 38px 20px 39px;
+            padding: 38px 20px 37px;
         }
 
         .c-box {
@@ -539,12 +558,49 @@
         .c-box__row--1 {
             width: 312px;
 
-            .c-box__temp {
+            .c-box__img {
+                transform: translateX(4px);
+            }
+
+            .c-box__desc {
+                transform: translateX(2px);
+                letter-spacing: -0.2px;
+            }
+
+            .c-box__star {
                 .c-box__img {
-                    margin-bottom: 8px;
+                    margin-bottom: 13px;
+                }
+            }
+
+            .c-box__ppmask {
+                .c-box__desc {
+                    transform: translateX(4px);
+                }
+            }
+
+            .c-box__wask {
+                .c-box__img {
+                    transform: translate(5px, 0);
                 }
 
                 .c-box__desc {
+                    transform: translate(4px, 1px);
+                    letter-spacing: -1px;
+                }
+            }
+
+            .c-box__temp {
+                padding: 8px 20px;
+
+                .c-box__img {
+                    margin-bottom: 8px;
+                    transform: translate(13px, 3px);
+                }
+
+                .c-box__desc {
+                    transform: translate(14px, -1px);
+                    letter-spacing: -0.8px;
                 }
             }
         }
@@ -554,7 +610,29 @@
 
             .c-box__item {
                 img {
-                    transform: translateX(0);
+                    transform: translateX(-2px);
+                }
+
+                .c-box__desc {
+                    transform: translateX(-3px);
+                }
+            }
+
+            .c-box__keep {
+                .c-box__desc {
+                    white-space: nowrap;
+                }
+            }
+
+            .c-box__speak {
+                .c-box__img {
+                    margin-bottom: -2px;
+                }
+            }
+
+            .c-box__meeting {
+                .c-box__img {
+                    margin-bottom: -1px;
                 }
             }
 
@@ -563,9 +641,11 @@
 
                 .c-box__img {
                     margin-bottom: -1px;
+                    transform: translateX(-12px);
                 }
 
                 .c-box__desc {
+                    transform: translateX(-12px);
                 }
             }
         }
