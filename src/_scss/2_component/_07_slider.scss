@@ -7,7 +7,7 @@
     }
 }
 
-.slideshow-container {
+.c-slideshow-container {
     z-index: 9;
     width: fit-content;
     position: relative;
@@ -17,7 +17,7 @@
 }
 
 
-.mySlides {
+.c-mySlides {
     display: none;
 
    
@@ -38,8 +38,8 @@
     }
 }
 
-.prev,
-.next {
+.c-prev,
+.c-next {
     cursor: pointer;
     width: 3.5%;
 
@@ -55,7 +55,7 @@
 }
 
 
-.next {
+.c-next {
     margin-left: 17px;
     @include sp {
         margin-left: 9px;
@@ -63,9 +63,6 @@
 }
 
 
-.prev:hover,
-.next:hover {
-}
 
 
 .fade {

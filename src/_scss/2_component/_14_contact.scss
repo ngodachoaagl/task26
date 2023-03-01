@@ -1,13 +1,14 @@
 .c-contact {
-    padding: 0 28px;
+    padding: 0 54px;
+    @include sp {
+        padding: 0 28px;
+    }
 
- 
     margin-top: 92px;
     @include sp {
         margin-top: 0;
-    
     }
-   
+
     .c-contact__main {
         display: flex;
         justify-content: center;

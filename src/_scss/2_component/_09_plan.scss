@@ -6,6 +6,7 @@
 
     margin: 117px auto 0;
     @include sp {
+        max-width: 450px;
         margin-top: 44px;
     }
 
