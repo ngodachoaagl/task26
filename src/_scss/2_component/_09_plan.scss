@@ -141,6 +141,9 @@
 
         .c-plan__row > .c-plan__tdMain > div.c-plan__td:first-of-type {
             margin-left: 5px;
+            @include tab {
+                margin-left: 0;
+            }
             @include sp {
                 margin-left: 0;
             }
@@ -152,6 +155,7 @@
 
             @include tab {
                 padding-bottom: 10px;
+                width: 82%;
             }
             @include sp {
                 padding-top: 12px;

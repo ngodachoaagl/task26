@@ -1,7 +1,7 @@
 .c-contact {
     padding: 0 54px;
     @include sp {
-        padding: 0 28px;
+        padding: 0 28px; 
     }
 
     margin-top: 92px;
@@ -20,6 +20,7 @@
         border: 1px solid #000;
         @include sp {
             height: 111px;
+          
         }
     }
 

@@ -92,35 +92,35 @@
   "web": {
     "body": [
       {
-        "icon": "/assets/img/web/SVG/images/deve.png",
+        "icon": "/assets/img/web/SVG/images/deve.svg",
         "bgColor": "u-bgBlack",
         "cap": "WEB予約",
         "desc": "入力フォームに必要事項を入力",
         "itemName": "Deve"
       },
       {
-        "icon": "/assets/img/web/SVG/images/user.png",
+        "icon": "/assets/img/web/SVG/images/user.svg",
         "bgColor": "u-bgGray",
         "cap": "ご来場",
         "desc": "来場されたら受付をお願いします",
         "itemName": "User"
       },
       {
-        "icon": "/assets/img/web/SVG/images/anketo.png",
+        "icon": "/assets/img/web/SVG/images/anketo.svg",
         "bgColor": "u-bgGray",
         "cap": "アンケート記入",
         "desc": "アンケート記入後、丁寧にご説明",
         "itemName": "Anketo"
       },
       {
-        "icon": "/assets/img/web/SVG/images/lett.png",
+        "icon": "/assets/img/web/SVG/images/lett.svg",
         "bgColor": "u-bgGray",
         "cap": "ご見学・ご説明",
         "desc": "何でもお気軽に相談してください",
         "itemName": "Lett"
       },
       {
-        "icon": "/assets/img/web/SVG/images/gift.png",
+        "icon": "/assets/img/web/SVG/images/gift.svg",
         "bgColor": "u-bgGray2",
         "cap": "特典プレゼント！",
         "desc": "QUOカードプレゼント",

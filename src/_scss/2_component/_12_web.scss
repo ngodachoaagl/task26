@@ -12,7 +12,7 @@
     }
 
     .c-web__title {
-        // transform: translateX(24px);
+       
         font-size: 3.4rem;
         font-weight: 400;
         letter-spacing: -0.8px;
@@ -72,7 +72,7 @@
         color: #fff;
 
         @include lg {
-            padding: 1% 1.2%;
+            padding: 2% 1.2%;
             flex-grow: 1;
         }
         @include sp {
@@ -113,6 +113,7 @@
                     border-left: 6px solid #000;
                 }
                 @include sp {
+                    right: -18px;
                     border-top: 4px solid transparent;
                     border-bottom: 4px solid transparent;
                     border-left: 4px solid #000;
@@ -129,6 +130,9 @@
         &:first-of-type {
             ::after {
                 right: -13%;
+                @include sp {
+                    right: -18px;
+                }
             }
         }
     }
@@ -156,10 +160,10 @@
             content: none !important;
         }
         @include lg {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
         @include tab {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
         @include sp {
             font-size: 1rem;
@@ -489,7 +493,7 @@
         }
     }
 
-    .sp--only {
+    .sp-only {
         .c-web__collect {
             display: flex;
             flex-wrap: nowrap;

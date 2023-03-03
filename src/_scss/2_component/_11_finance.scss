@@ -1,10 +1,14 @@
 .c-finance {
-    margin-top: 92.1px;
+    max-width: 100%;
     background-color: #ededed;
-    padding: 93px 50px 64px;
-    @include sp {
-        margin-top: 69px;
-        padding: 35px 0 13px;
+
+    .c-finance__box {
+        margin-top: 92.1px;
+        padding: 93px 50px 64px;
+        @include sp {
+            margin-top: 69px;
+            padding: 35px 0 13px;
+        }
     }
 
     .c-finance__header {
@@ -35,7 +39,6 @@
                 height: 1px;
                 width: 29px;
                 bottom: 18%;
-
             }
         }
     }
@@ -43,7 +46,7 @@
     .c-finance__cap {
         padding: 4px 56.1px 17px;
         margin-top: 60px;
-     
+
         font-weight: 400;
         font-size: 3rem;
         color: #fff;
@@ -62,7 +65,6 @@
         max-width: 1280px;
         margin: 45px auto;
         display: flex;
-       
 
         @include sp {
             flex-wrap: wrap;
@@ -70,7 +72,6 @@
             align-items: center;
             flex-direction: column;
             padding: 0 25px;
-        
         }
     }
 
@@ -112,7 +113,6 @@
         }
 
         .c-finance__desc {
-          
             font-size: 2.2rem;
             color: #231815;
             letter-spacing: -0.2px;
@@ -140,8 +140,6 @@
     .c-finance__panel--r {
         position: relative;
 
-       
-
         .c-finance__content {
             position: absolute;
             top: 49%;
@@ -167,10 +165,9 @@
             }
             @include sp {
                 width: 34%;
-                
+
                 top: -4.1%;
                 right: -7%;
-
             }
         }
 

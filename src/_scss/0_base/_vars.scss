@@ -1,41 +1,10 @@
-//baseWidth
 
-$main-fonts: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
-$notoSans: "Noto Sans JP";
+
+
 $notoSerif: "Noto Serif JP", serif;
 
-
-$San-Bold: "NotoSanJP-Bold";
-$San-Light: "NotoSanJP-Light";
-$San-Reg: "NotoSanJP-Regular";
-$Serif-Bold: "NotoSerifJP-Bold";
-$Serif-Regular: "NotoSerifJP-Regular";
 $Oswald-Light: "Oswald-Light";
 
-@font-face {
-    font-family: NotoSanJP-Bold;
-    src: url(/assets/fonts/NotoSansJP/NotoSansJP-Bold.otf);
-}
-
-@font-face {
-    font-family: NotoSanJP-Light;
-    src: url(/assets/fonts/NotoSansJP/NotoSansJP-Light.otf);
-}
-
-@font-face {
-    font-family: NotoSanJP-Regular;
-    src: url(/assets/fonts/NotoSansJP/NotoSansJP-Regular.otf);
-}
-
-@font-face {
-    font-family: NotoSerifJP-Bold;
-    src: url(/assets/fonts/NotoSerifJP/NotoSerifJP-Bold.otf);
-}
-
-@font-face {
-    font-family: NotoSerifJP-Regular;
-    src: url(/assets/fonts/NotoSerifJP/NotoSerifJP-Regular.otf);
-}
 @font-face {
     font-family: Oswald-Light;
     src: url(/assets/fonts/Oswald/Oswald-Light.ttf);

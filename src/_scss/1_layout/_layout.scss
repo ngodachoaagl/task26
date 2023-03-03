@@ -20,29 +20,29 @@ body {
     margin: 0 auto;
 }
 
-.l-container--1600 {
+.l-container--w1600 {
     max-width: 1600px;
     margin: 0 auto;
 }
 
-.l-container--1740 {
+.l-container--w1740 {
     max-width: 1740px;
     margin: 0 auto;
 }
 
-.l-container--1920 {
+.l-container--w1920 {
     max-width: 1920px;
     margin: 0 auto;
 }
 //-------------------------------------------------------
-.sp--only {
+.sp-only {
     display: none !important;
     @include sp {
         display: block !important;
     }
 }
 
-.pc--only {
+.pc-only {
     display: block;
     @include sp {
         display: none !important;

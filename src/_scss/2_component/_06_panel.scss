@@ -3,7 +3,7 @@
     max-width: 1300px;
     margin: 119px auto;
     padding: 0 54px;
-   
+
     @include sp {
         padding: 0 28px;
         margin-top: 130px;
@@ -16,17 +16,26 @@
     }
 }
 
+.c-panel--top {
+    @include sp {
+        margin-top: 61px;
+        padding: 0 28px;
+   
+    }
+}
+
 .c-panel--bot {
     margin-bottom: 20px;
     padding: 0 52px;
-
+  
     img {
         transform: translate(2px);
+     
     }
     @include sp {
         transform: translate(0, -1px);
         padding: 0 28px;
+       
         margin-top: 60px;
     }
- 
 }

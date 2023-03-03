@@ -5,30 +5,30 @@
   <!-- @@meta -->
 
   <!-- @content -->
-  <main class="l-container--1920">
+  <main>
     <section class="c-mainvisual">
       <div class="c-mainvisual__inner">
         <img class="c-mainvisual__img" src="/assets/img/mainvisual/banner.jpg" alt="COCO MGM DESIGN">
         <div class="c-mainvisual__text">
           <a href="#"> <img class="c-mainvisual__logo" src="/assets/img/mainvisual/logo.png" alt="COCO MGM DESIGN"></a>
 
-          <h1 class="c-mainvisual__desc">「こんな家に住みたい」をカタチにした家</h1>
+          <h1 class="c-mainvisual__title">「こんな家に住みたい」をカタチにした家</h1>
           <img class="c-mainvisual__cap" src="/assets/img/mainvisual/caption.png" alt="COCO MGM DESIGN">
         </div>
       </div>
     </section>
-    <section class="c-merit l-container--1600">
+    <section class="c-merit l-container--w1600">
       <h2 class="c-merit__title">家づくりの、こんな不安やお悩みないですか？</h2>
 
       <div class="c-merit__header">
         <div class="c-merit__case c-box c-box--3col">
           <% if(typeof merit !='undefined' ) { %>
             <% merit.headerContent.forEach(item=>{%>
-              <div class="c-box__item  <%  if(item.alignRight === true){ %> c-merit__alignR<%}%>">
+              <div class="c-box__item<%  if(item.alignRight === true){ %> c-merit__alignR<%}%>">
 
-                <h2 class="c-merit__caseNum">
+                <p class="c-merit__caseNum">
                   <%= item.caseNum %>
-                </h2>
+                </p>
                 <div class="c-speech__bubble">
                   <p class="c-speech__mess">
                     <%= item.caseMess %>
@@ -45,9 +45,9 @@
 
         </div>
       </div>
-      <div class="c-merit__body l-container ">
-        <h2 class="c-merit__bodyTitle pc--only">はじめての家づくりが具体的に進む、ご来店の<span>3つのメリット</span></h2>
-        <h2 class="c-merit__bodyTitle sp--only">はじめての家づくりが具体的に進む、<br>ご来店の<span>3つのメリット</span></h2>
+      <div class="c-merit__body l-container">
+        <h2 class="c-merit__bodyTitle pc-only">はじめての家づくりが具体的に進む、ご来店の<span>3つのメリット</span></h2>
+        <h2 class="c-merit__bodyTitle sp-only">はじめての家づくりが具体的に進む、<br>ご来店の<span>3つのメリット</span></h2>
         <h3 class="c-merit__bodyCap c-title">WELCOME TO MODELHOUSE</h3>
         <% if(typeof merit !="undefined" && typeof merit.bodyContent !="undefined" ){ %>
           <% merit.bodyContent.forEach(item=>{%>
@@ -74,7 +74,7 @@
 
       </div>
     </section>
-    <section class="c-rePoint l-container--1740">
+    <section class="c-rePoint l-container--w1740">
       <div class="c-rePoint__header">
         <div class="c-rePoint__headerImg">
           <img src="/assets/img/RePoint/1x/headerLogo.png" alt="RECOMMENDED POINT">
@@ -91,13 +91,13 @@
             <% rePoint.bodyContent.forEach(item=>{%>
               <a href="#" class="c-box__item">
                 <div class="c-box__main">
-                <img class="c-box__img" src="<%= item.imgUrl %>" alt="<%= item.boxTitle %>">
-                <h3 class="c-box__title">
-                  <%= item.boxTitle %>
-                </h3>
-                <p class="c-box__desc"><%- item.boxDesc %>
+                  <img class="c-box__img" src="<%= item.imgUrl %>" alt="<%= item.boxTitle %>">
+                  <h3 class="c-box__title">
+                    <%= item.boxTitle %>
+                  </h3>
+                  <p class="c-box__desc"><%- item.boxDesc %>
 
-                </p>
+                  </p>
                 </div>
               </a>
               <% })%>
@@ -128,29 +128,31 @@
         <div class="c-slideshow-container">
 
 
-          <div class="c-mySlides fade">
+          <div class="c-mySlides">
+
             <picture>
               <source media="(max-width:767px)" srcset="/assets/img/Slider/1x/slider1SP.png">
               <img src="/assets/img/Slider/1x/slider1.png" alt="slider">
             </picture>
-          </div>
 
-          <div class="c-mySlides fade">
 
             <picture>
               <source media="(max-width:767px)" srcset="/assets/img/Slider/1x/slider2SP.png">
               <img src="/assets/img/Slider/1x/slider2.png" alt="slider">
             </picture>
 
+
+          </div>
+          <div class="c-slider--btn">
+            <a class="c-prev"><img src="/assets/img/Slider/1x/btnPre.png" alt="pre"></a>
+            <a class="c-next"><img src="/assets/img/Slider/1x/btnNext.png" alt="next"></a>
           </div>
 
-         
 
-<div class="c-slider--btn">
-    <a class="c-prev" onclick="plusSlides(-1)"><img src="/assets/img/Slider/1x/btnPre.png" alt="pre"></a>
-    <a class="c-next" onclick="plusSlides(1)"><img src="/assets/img/Slider/1x/btnNext.png" alt="next"></a>
-</div>
-        
+
+
+
+
         </div>
 
       </div>
@@ -170,7 +172,7 @@
               年齢や性別を意識しない誰にでも愛される空間です。</p>
           </div>
           <div class="c-design__iframe">
-            <iframe src="https://www.youtube.com/embed/GtH-3_jjTvQ" title="YouTube video player" 
+            <iframe src="https://www.youtube.com/embed/GtH-3_jjTvQ" title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </div>
@@ -197,8 +199,8 @@
         </div>
 
       </div>
-      <p class="c-plan__param pc--only">1階床面積 　192.53㎡（58.24坪）　　2階床面積　139.01㎡（42.05坪）　　延床面積　331.54㎡（100.29坪）</p>
-      <p class="c-plan__param sp--only">1階床面積 　192.53㎡（58.24坪）<br>2階床面積　139.01㎡（42.05坪）<br>延床面積　331.54㎡（100.29坪）</p>
+      <p class="c-plan__param pc-only">1階床面積 　192.53㎡（58.24坪）　　2階床面積　139.01㎡（42.05坪）　　延床面積　331.54㎡（100.29坪）</p>
+      <p class="c-plan__param sp-only">1階床面積 　192.53㎡（58.24坪）<br>2階床面積　139.01㎡（42.05坪）<br>延床面積　331.54㎡（100.29坪）</p>
       <div class="c-plan__table">
 
         <div class="c-plan__row c-plan__row--1">
@@ -242,30 +244,31 @@
 
     </section>
     <section class="c-finance">
-      <div class="c-finance__header">
-        <h2 class="c-finance__title c-title">FINANCE</h2>
-        <h3 class="c-finance__cap">3,400万円借入の場合</h3>
-      </div>
+      <div class="c-finance__box">
+        <div class="c-finance__header">
+          <h2 class="c-finance__title c-title">FINANCE</h2>
+          <h3 class="c-finance__cap">3,400万円借入の場合</h3>
+        </div>
 
-      <div class="c-finance__main">
-        <div class="c-finance__panel c-finance__panel--l">
-          <div class="c-finance__content">
-            <p class="c-finance__desc">借入金　・・・・・・・・・・3,400万円</p>
-            <p class="c-finance__desc">ボーナス払い・・・・・・・・・・0万円</p>
-            <p class="c-finance__desc">3年固定金利・・・・・・・・・・0.725％</p>
-            <p class="c-finance__desc">返済期間・・・・・・・・・・・・・35年</p>
+        <div class="c-finance__main">
+          <div class="c-finance__panel c-finance__panel--l">
+            <div class="c-finance__content">
+              <p class="c-finance__desc">借入金　・・・・・・・・・・3,400万円</p>
+              <p class="c-finance__desc">ボーナス払い・・・・・・・・・・0万円</p>
+              <p class="c-finance__desc">3年固定金利・・・・・・・・・・0.725％</p>
+              <p class="c-finance__desc">返済期間・・・・・・・・・・・・・35年</p>
+            </div>
+          </div>
+          <div class="c-finance__panel c-finance__panel--r">
+            <div class="c-finance__content">
+              <p class="c-finance__pnCap">月々のお支払い</p>
+              <h4 class="c-finance__price">91,682<span> 円</span></h4>
+              <h5 class="c-finance__cate">土地付建物販売価格　3,400 万円（税込)</h5>
+            </div>
+            <img class="c-finance__icon" src="/assets/img/Finance/icon-finance.svg" alt="kinkaku">
           </div>
         </div>
-        <div class="c-finance__panel c-finance__panel--r">
-          <div class="c-finance__content">
-            <p class="c-finance__pnCap">月々のお支払い</p>
-            <h3 class="c-finance__price">91,682<span> 円</span></h3>
-            <h4 class="c-finance__cate">土地付建物販売価格　3,400 万円（税込)</h4>
-          </div>
-          <img class="c-finance__icon" src="/assets/img/Finance/icon-finance.svg" alt="kinkaku">
-        </div>
       </div>
-
     </section>
     <section class="c-web">
       <div class="c-web__header">
@@ -273,18 +276,18 @@
         <h3 class="c-web__desc">待ち時間ナシ！混雑をきにせず来場OK！<br>
           経験豊富なスタッフがしっかりとご対応いたします。</h3>
       </div>
-      <div class="c-web__body l-container--1740">
+      <div class="c-web__body l-container--w1740">
         <% if(typeof web !="undefined" ){ %>
           <% web.body.forEach(item=>{%>
             <a href="#" class="c-web__item <%= item.bgColor %> c-box__item<%= item.itemName %>">
               <img class="c-web__Bicon" src="<%= item.icon %>" alt="<%= item.cap %>">
-              <h3 class="c-web__Bcap">
+              <h4 class="c-web__Bcap">
                 <%= item.cap %>
-              </h3>
-              <p class="c-web__bar"></p>
-              <h4 class="c-web__Bdesc">
-                <%= item.desc %>
               </h4>
+              <p class="c-web__bar"></p>
+              <h5 class="c-web__Bdesc">
+                <%= item.desc %>
+              </h5>
             </a>
             <% })%>
               <% }%>
@@ -296,12 +299,12 @@
       <div class="c-web__footer l-container">
         <div class="c-web__banner">
           <a class="c-web__btn" href="#">ご来場のお客様へ</a>
-          <h3 class="c-web__bannerTitle pc--only">新型コロナウイルス感染症予防対策につきまして</h3>
-          <h3 class="c-web__bannerTitle sp--only">新型コロナウイルス<br>感染症予防対策につきまして</h3>
+          <h3 class="c-web__bannerTitle pc-only">新型コロナウイルス感染症予防対策につきまして</h3>
+          <h3 class="c-web__bannerTitle sp-only">新型コロナウイルス<br>感染症予防対策につきまして</h3>
           <h4 class="c-web__bannerDesc pc-only">ウェブココでは新型コロナウイルス感染拡大防止のため、対策を講じておりますので安心してご利用ください。</h4>
-          <h4 class="c-web__bannerDesc sp--only">ウェブココでは新型コロナウイルス<br>感染拡大防止のため、対策を講じて<br>おりますので安心してご利用ください。</h4>
+          <h4 class="c-web__bannerDesc sp-only">ウェブココでは新型コロナウイルス<br>感染拡大防止のため、対策を講じて<br>おりますので安心してご利用ください。</h4>
         </div>
-        <div class="c-web__collect pc--only">
+        <div class="c-web__collect pc-only">
           <% if(typeof web !='undefined' && typeof web.footer !='undefined' ){ %>
             <% web.footer.forEach(footerItem=>{ %>
               <div class="c-box c-box--5col <%= footerItem.name %>">
@@ -318,7 +321,7 @@
                 <% }%>
 
         </div>
-        <div class=" sp--only">
+        <div class=" sp-only">
           <div class="c-web__collect">
             <% if(typeof web !='undefined' && typeof web.footer !='undefined' ){ %>
               <% web.footerSP.forEach(footerItem=>{ %>
@@ -383,15 +386,18 @@
       </a>
 
     </section>
-<section class="c-contact">
-  <a href="#" class="c-contact__main"><h2 class="c-contact__title c-title">CONTACT FORM</h2></a>
- 
-</section>
+    <section class="c-contact">
+      <a href="#" class="c-contact__main">
+        <h2 class="c-contact__title c-title">CONTACT FORM</h2>
+      </a>
+
+    </section>
 
   </main>
   <!-- @@content -->
 
   <!-- @script -->
+
   <script>
 
   </script>
