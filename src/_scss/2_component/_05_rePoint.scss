@@ -1,21 +1,21 @@
 .c-rePoint {
     margin-top: 177px;
     background-color: #ededed;
-    height: 755px;
+  
     position: relative;
-    padding: 146px 4% 77px;
+    padding: 146px 4% 76px;
     @include lg {
         padding-bottom: 40px;
-        height: 620px;
+        
     }
     @include tab {
         padding: 90px 15px 40px;
-        height: 590px;
+      
     }
     @include sp {
         margin-top: 82px;
         padding: 75px 12px 109px;
-        height: unset;
+       
        
     }
 }
@@ -52,7 +52,7 @@
         }
     }
 
-    .c-rePoint__headerCap {
+    .c-rePoint__headerTitle {
         font-family: $Oswald-Light;
         font-weight: 300;
         font-size: 8.3rem;
@@ -73,7 +73,7 @@
         }
     }
 
-    .c-rePoint__headerTitle {
+    .c-rePoint__headerCap {
         text-align: right;
 
         font-weight: 400;
@@ -157,11 +157,10 @@
 
     .c-box__main {
         padding: 0 20px 22px;
-        max-height: 520px;
-        overflow-y: auto;
+       
         @include lg {
             padding: 0 15px 10px;
-            max-height: 400px;
+       
         }
         @include sp {
             padding: 0;

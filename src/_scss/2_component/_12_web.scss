@@ -40,7 +40,7 @@
         font-weight: 300;
         font-size: 2.7rem;
         line-height: 1.4;
-        // transform: translateX(26px);
+       
         @include sp {
             font-size: 1.3rem;
             transform: translateX(0);
@@ -440,7 +440,7 @@
         }
     }
 
-    .c-box__row--1 {
+    .c-box__row1 {
         .c-box__img {
             transform: translateX(-8px);
             margin-bottom: 6px;
@@ -466,7 +466,7 @@
         }
     }
 
-    .c-box__row--2 {
+    .c-box__row2 {
         .c-box__img {
             transform: translate(-8px, 5px);
             margin-bottom: 2px;
@@ -493,7 +493,7 @@
         }
     }
 
-    .sp-only {
+    .l-sp--only {
         .c-web__collect {
             display: flex;
             flex-wrap: nowrap;
@@ -559,7 +559,7 @@
             }
         }
 
-        .c-box__row--1 {
+        .c-box__row1 {
             width: 312px;
 
             .c-box__img {
@@ -609,7 +609,7 @@
             }
         }
 
-        .c-box__row--2 {
+        .c-box__row2 {
             width: 268px;
 
             .c-box__item {

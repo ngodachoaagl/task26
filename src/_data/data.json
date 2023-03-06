@@ -129,7 +129,7 @@
     ],
     "footer": [
       {
-        "name": "c-box__row--1",
+        "name": "c-box__row1",
         "main": [
           {
             "iconIMG": "/assets/img/web/window.png",
@@ -164,7 +164,7 @@
         ]
       },
       {
-        "name": "c-box__row--2",
+        "name": "c-box__row2",
         "main": [
           {
             "iconIMG": "/assets/img/web/star.png",
@@ -201,7 +201,7 @@
     ],
     "footerSP": [
       {
-        "name": "c-box__row--1",
+        "name": "c-box__row1",
         "main": [
           {
             "iconIMG": "/assets/img/web/window.png",
@@ -236,7 +236,7 @@
         ]
       },
       {
-        "name": "c-box__row--2",
+        "name": "c-box__row2",
         "main": [
           {
             "iconIMG": "/assets/img/web/mask.png",

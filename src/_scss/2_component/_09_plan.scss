@@ -220,7 +220,7 @@
             padding-right: 10px;
         }
 
-        .c-plan__row--3 {
+        .c-plan__row3 {
             .c-plan__th {
                 @include sp {
                     transform: translateY(6px);
@@ -228,7 +228,7 @@
             }
         }
 
-        .c-plan__row--4 {
+        .c-plan__row4 {
             .c-plan__th {
                 @include sp {
                     transform: translateY(-5px);

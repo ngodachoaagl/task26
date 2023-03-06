@@ -35,14 +35,14 @@ body {
     margin: 0 auto;
 }
 //-------------------------------------------------------
-.sp-only {
+.l-sp--only {
     display: none !important;
     @include sp {
         display: block !important;
     }
 }
 
-.pc-only {
+.l-pc--only {
     display: block;
     @include sp {
         display: none !important;

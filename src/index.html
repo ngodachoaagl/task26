@@ -1,4 +1,4 @@
-<%- include('_layouts/layout', { title: 'Home page' }); -%>
+<%- include('_layouts/layout', { title: 'COCO' }); -%>
 
   <!-- @meta -->
   <meta name="description" content="Home page">
@@ -46,9 +46,9 @@
         </div>
       </div>
       <div class="c-merit__body l-container">
-        <h2 class="c-merit__bodyTitle pc-only">はじめての家づくりが具体的に進む、ご来店の<span>3つのメリット</span></h2>
-        <h2 class="c-merit__bodyTitle sp-only">はじめての家づくりが具体的に進む、<br>ご来店の<span>3つのメリット</span></h2>
-        <h3 class="c-merit__bodyCap c-title">WELCOME TO MODELHOUSE</h3>
+        <P class="c-merit__bodyCap l-pc--only">はじめての家づくりが具体的に進む、ご来店の<span>3つのメリット</span></P>
+        <P class="c-merit__bodyCap l-sp--only">はじめての家づくりが具体的に進む、<br>ご来店の<span>3つのメリット</span></P>
+        <h3 class="c-merit__bodyTitle c-title">WELCOME TO MODELHOUSE</h3>
         <% if(typeof merit !="undefined" && typeof merit.bodyContent !="undefined" ){ %>
           <% merit.bodyContent.forEach(item=>{%>
             <div class="c-box c-box--2col <%  if(item.rowRev === true){ %> c-box__rowRev<%}%>">
@@ -81,8 +81,8 @@
 
         </div>
         <div class="c-rePoint__headerText">
-          <p class="c-rePoint__headerCap">RECOMMENDED POINT</p>
-          <h2 class="c-rePoint__headerTitle">イベント・見学会の<span>見どころ！</span></h2>
+          <h2 class="c-rePoint__headerTitle">RECOMMENDED POINT</h2>
+          <h3 class="c-rePoint__headerCap">イベント・見学会の<span>見どころ！</span></h3>
         </div>
       </div>
       <div class="c-rePoint__body">
@@ -109,10 +109,7 @@
 
     </section>
     <section class="c-panel c-panel--top">
-      <h2 class="c-panel__cap">2日前までにWEBまたはお電話で「webcoco完全ご予約制見学会」に来場予約された方</h2>
-      <h3 class="c-panel__title">
-        絶対オトク！1,000円分のQUOカードプレゼント
-      </h3>
+        <h2 class="c-panel__title">2日前までにWEBまたはお電話で「webcoco完全ご予約制見学会」に来場予約された方</h2>
       <a href="#">
         <picture>
           <source media="(max-width:767px)" srcset="/assets/img/RePoint/1x/panel-topSP.png">
@@ -199,19 +196,19 @@
         </div>
 
       </div>
-      <p class="c-plan__param pc-only">1階床面積 　192.53㎡（58.24坪）　　2階床面積　139.01㎡（42.05坪）　　延床面積　331.54㎡（100.29坪）</p>
-      <p class="c-plan__param sp-only">1階床面積 　192.53㎡（58.24坪）<br>2階床面積　139.01㎡（42.05坪）<br>延床面積　331.54㎡（100.29坪）</p>
+      <p class="c-plan__param l-pc--only">1階床面積 　192.53㎡（58.24坪）　　2階床面積　139.01㎡（42.05坪）　　延床面積　331.54㎡（100.29坪）</p>
+      <p class="c-plan__param l-sp--only">1階床面積 　192.53㎡（58.24坪）<br>2階床面積　139.01㎡（42.05坪）<br>延床面積　331.54㎡（100.29坪）</p>
       <div class="c-plan__table">
 
-        <div class="c-plan__row c-plan__row--1">
+        <div class="c-plan__row c-plan__row1">
           <span class="c-plan__th">商品プラン</span>
           <span class="c-plan__td c-table--fs25">ZERO-CUBE</span>
         </div>
-        <div class="c-plan__row c-plan__row--2">
+        <div class="c-plan__row c-plan__row2">
           <span class="c-plan__th">構造</span>
           <span class="c-plan__td c-table--fs25">木造2階建て</span>
         </div>
-        <div class="c-plan__row c-plan__row--3">
+        <div class="c-plan__row c-plan__row3">
           <span class="c-plan__th">設備・仕様</span>
           <div class="c-plan__tdMain">
             <div class="c-plan__td">
@@ -228,7 +225,7 @@
             <div class="c-plan__td"> <a href="#"> <span class=" c-table--spbdr">防音構造床</span></a></div>
           </div>
         </div>
-        <div class="c-plan__row c-plan__row--4">
+        <div class="c-plan__row c-plan__row4">
           <span class="c-plan__th">空間</span>
           <div class="c-plan__tdMain">
             <div class="c-plan__td"> <a href="#"> <span class=" c-table--spbdr">二世帯・多世帯</span></a></div>
@@ -299,19 +296,19 @@
       <div class="c-web__footer l-container">
         <div class="c-web__banner">
           <a class="c-web__btn" href="#">ご来場のお客様へ</a>
-          <h3 class="c-web__bannerTitle pc-only">新型コロナウイルス感染症予防対策につきまして</h3>
-          <h3 class="c-web__bannerTitle sp-only">新型コロナウイルス<br>感染症予防対策につきまして</h3>
-          <h4 class="c-web__bannerDesc pc-only">ウェブココでは新型コロナウイルス感染拡大防止のため、対策を講じておりますので安心してご利用ください。</h4>
-          <h4 class="c-web__bannerDesc sp-only">ウェブココでは新型コロナウイルス<br>感染拡大防止のため、対策を講じて<br>おりますので安心してご利用ください。</h4>
+          <h3 class="c-web__bannerTitle l-pc--only">新型コロナウイルス感染症予防対策につきまして</h3>
+          <h3 class="c-web__bannerTitle l-sp--only">新型コロナウイルス<br>感染症予防対策につきまして</h3>
+          <h4 class="c-web__bannerDesc l-pc--only">ウェブココでは新型コロナウイルス感染拡大防止のため、対策を講じておりますので安心してご利用ください。</h4>
+          <h4 class="c-web__bannerDesc l-sp--only">ウェブココでは新型コロナウイルス<br>感染拡大防止のため、対策を講じて<br>おりますので安心してご利用ください。</h4>
         </div>
-        <div class="c-web__collect pc-only">
+        <div class="c-web__collect l-pc--only">
           <% if(typeof web !='undefined' && typeof web.footer !='undefined' ){ %>
             <% web.footer.forEach(footerItem=>{ %>
               <div class="c-box c-box--5col <%= footerItem.name %>">
                 <% footerItem.main.forEach(item=>{%>
                   <a href="#" class="c-box__item c-box__<%- item.name %>">
                     <img class="c-box__img" src="<%= item.iconIMG %>" alt="<%= item.alt %>">
-                    <h3 class="c-box__desc"><%- item.desc %></h3>
+                    <h5 class="c-box__desc"><%- item.desc %></h5>
                   </a>
                   <% })%>
 
@@ -321,7 +318,7 @@
                 <% }%>
 
         </div>
-        <div class=" sp-only">
+        <div class=" l-sp--only">
           <div class="c-web__collect">
             <% if(typeof web !='undefined' && typeof web.footer !='undefined' ){ %>
               <% web.footerSP.forEach(footerItem=>{ %>
@@ -329,7 +326,7 @@
                   <% footerItem.main.forEach(item=>{%>
                     <a href="#" class="c-box__item c-box__<%- item.name %>">
                       <img class="c-box__img" src="<%= item.iconIMG %>" alt="<%= item.alt %>">
-                      <h3 class="c-box__desc"><%- item.desc %></h3>
+                      <h5 class="c-box__desc"><%- item.desc %></h5>
                     </a>
                     <% })%>
 
@@ -372,10 +369,7 @@
       </div>
     </section>
     <section class="c-panel c-panel--bot">
-      <h2 class="c-panel__cap">2日前までにWEBまたはお電話で「webcoco完全ご予約制見学会」に来場予約された方</h2>
-      <h3 class="c-panel__title">
-        絶対オトク！1,000円分のQUOカードプレゼント
-      </h3>
+      <h2 class="c-panel__title">2日前までにWEBまたはお電話で「webcoco完全ご予約制見学会」に来場予約された方</h2>
       <a href="#">
         <picture>
           <source media="(max-width:767px)" srcset="/assets/img/RePoint/1x/panelSP.png">
